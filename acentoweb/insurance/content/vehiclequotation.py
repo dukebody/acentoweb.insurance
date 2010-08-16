@@ -41,7 +41,7 @@ class IVehicleQuotation(form.Schema):
             title=_(u"Holder driving license expedition date"),
         )
 
-    holderLicenseDate = schema.Bool(
+    holderOwnership = schema.Bool(
             title=_(u"Is the holder the vehicle owner?"),
         )
 

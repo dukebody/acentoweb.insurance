@@ -1,6 +1,7 @@
 import unittest2 as unittest
 import doctest
 
+from plone.testing import z2
 from plone.app.testing.layers import IntegrationTesting
 from plone.app.testing.layers import FunctionalTesting
 from plone.app.testing import PLONE_FIXTURE
@@ -22,6 +23,7 @@ class InsuranceLayer(PloneSandboxLayer):
         import acentoweb.insurance
         xmlconfig.file('configure.zcml', acentoweb.insurance,
                        context=configurationContext)
+        z2.installProduct(app, 'acentoweb.insurance')
 
     def setUpPloneSite(self, portal):
         # install into the Plone site
@@ -39,7 +41,7 @@ class TestSetup(unittest.TestCase):
     def test_quotation_installed(self):
         portal = self.layer['portal']
         typesTool = getToolByName(portal, 'portal_types')
-        self.assertNotEqual(typesTool.getTypeInfo('InsuranceQuotation'), None)
+        self.assertNotEqual(typesTool.getTypeInfo('acentoweb.insurance.vehiclequotation'), None)
 
 def test_suite():
     suite = unittest.TestSuite()

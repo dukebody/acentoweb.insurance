@@ -7,10 +7,14 @@ from plone.app.testing.layers import FunctionalTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.app.testing import applyProfile
+from plone.app.testing import TEST_USER_NAME
+from plone.app.testing import setRoles
 
 from zope.configuration import xmlconfig
 
 from Products.CMFCore.utils import getToolByName
+
+from acentoweb.insurance.content.vehicleoffer import IVehicleOffer
 
 
 optionflags = (doctest.ELLIPSIS | doctest.NORMALIZE_WHITESPACE)
@@ -38,10 +42,30 @@ INSURANCE_FUNCTIONAL_TESTING = FunctionalTesting(bases=(INSURANCE_FIXTURE,), nam
 class TestSetup(unittest.TestCase):
     layer = INSURANCE_INTEGRATION_TESTING
 
-    def test_quotation_installed(self):
+    def test_vehiclequotation_installed(self):
         portal = self.layer['portal']
         typesTool = getToolByName(portal, 'portal_types')
         self.assertNotEqual(typesTool.getTypeInfo('acentoweb.insurance.vehiclequotation'), None)
+
+    def test_vehicleoffer_installed(self):
+        portal = self.layer['portal']
+        typesTool = getToolByName(portal, 'portal_types')
+        self.assertNotEqual(typesTool.getTypeInfo('acentoweb.insurance.vehicleoffer'), None)
+
+
+    def test_vehicleoffer_adding(self):
+        """Check that we can add vehicle insurance offers into
+        vehicle quotations.
+        """
+        portal = self.layer['portal']
+        setRoles(portal, TEST_USER_NAME, ['Contributor'])
+
+        portal.invokeFactory('acentoweb.insurance.vehiclequotation', 'quotation')
+        quotation = portal['quotation']
+        quotation.invokeFactory('acentoweb.insurance.vehicleoffer', 'vh1')
+        vh1 = quotation['vh1']
+        self.failUnless(IVehicleOffer.providedBy(vh1))
+        
 
 def test_suite():
     suite = unittest.TestSuite()

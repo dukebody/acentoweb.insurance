@@ -1,55 +1,50 @@
-import unittest
+import unittest2 as unittest
+import doctest
 
-#from zope.testing import doctestunit
-#from zope.component import testing
-from Testing import ZopeTestCase as ztc
+from plone.app.testing.layers import IntegrationTesting
+from plone.app.testing.layers import FunctionalTesting
+from plone.app.testing import PLONE_FIXTURE
+from plone.app.testing import PloneSandboxLayer
+from plone.app.testing import applyProfile
 
-from Products.Five import fiveconfigure
-from Products.PloneTestCase import PloneTestCase as ptc
-from Products.PloneTestCase.layer import PloneSite
-ptc.setupPloneSite()
+from zope.configuration import xmlconfig
 
-import acentoweb.insurance
+from Products.CMFCore.utils import getToolByName
 
 
-class TestCase(ptc.PloneTestCase):
+optionflags = (doctest.ELLIPSIS | doctest.NORMALIZE_WHITESPACE)
 
-    class layer(PloneSite):
+class InsuranceLayer(PloneSandboxLayer):
+    defaultBases = (PLONE_FIXTURE,)
+    
+    def setUpZope(self, app, configurationContext):
+        # load ZCML
+        import acentoweb.insurance
+        xmlconfig.file('configure.zcml', acentoweb.insurance,
+                       context=configurationContext)
 
-        @classmethod
-        def setUp(cls):
-            fiveconfigure.debug_mode = True
-            ztc.installPackage(acentoweb.insurance)
-            fiveconfigure.debug_mode = False
+    def setUpPloneSite(self, portal):
+        # install into the Plone site
+        applyProfile(portal, 'acentoweb.insurance:default')
 
-        @classmethod
-        def tearDown(cls):
-            pass
+INSURANCE_FIXTURE = InsuranceLayer()
 
+INSURANCE_INTEGRATION_TESTING = IntegrationTesting(bases=(INSURANCE_FIXTURE,), name="Insurance:Integration")
+INSURANCE_FUNCTIONAL_TESTING = FunctionalTesting(bases=(INSURANCE_FIXTURE,), name="Insurance:Functional")
+
+
+class TestSetup(unittest.TestCase):
+    layer = INSURANCE_INTEGRATION_TESTING
+
+    def test_quotation_installed(self):
+        portal = self.layer['portal']
+        typesTool = getToolByName(portal, 'portal_types')
+        self.assertNotEqual(typesTool.getTypeInfo('InsuranceQuotation'), None)
 
 def test_suite():
-    return unittest.TestSuite([
-
-        # Unit tests
-        #doctestunit.DocFileSuite(
-        #    'README.txt', package='acentoweb.insurance',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-        #doctestunit.DocTestSuite(
-        #    module='acentoweb.insurance.mymodule',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-
-        # Integration tests that use PloneTestCase
-        #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='acentoweb.insurance',
-        #    test_class=TestCase),
-
-        #ztc.FunctionalDocFileSuite(
-        #    'browser.txt', package='acentoweb.insurance',
-        #    test_class=TestCase),
-
+    suite = unittest.TestSuite()
+    suite.addTests([
+        unittest.makeSuite(TestSetup)
         ])
+    return suite
 
-if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')

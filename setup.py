@@ -27,6 +27,7 @@ setup(name='acentoweb.insurance',
           'setuptools',
           # -*- Extra requirements: -*-
           'Plone',
+          'plone.app.dexterity',
       ],
       extras_require={
           'test': [

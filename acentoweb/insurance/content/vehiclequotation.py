@@ -12,6 +12,15 @@ class IVehicleQuotation(form.Schema):
     """
 
     # holder data
+    form.fieldset('holderData',
+                  label=_(u"Holder data"),
+                  fields=['holderName',
+                          'holderFamilyName',
+                          'holderNIF',
+                          'holderBirthDate',
+                          'holderLicenseDate',]
+                  )
+
     holderName = schema.TextLine(
             title=_(u"Holder name"),
         )
@@ -36,12 +45,16 @@ class IVehicleQuotation(form.Schema):
             title=_(u"Is the holder the vehicle owner?"),
         )
 
-
-    holderNIF = schema.TextLine(
-            title=_(u"Holder identity number"),
-        )
-
     # vehicle data
+    form.fieldset('vehicleData',
+                  label=_(u"Vehicle data"),
+                  fields=['vehicleBrand',
+                          'vehicleModel',
+                          'vehicleVersion',
+                          'vehiclePlateNumber',
+                          'vehicleFirstLicensingDate',]
+                  )
+    
     vehicleBrand = schema.TextLine(
             title=_(u"Vehicle brand"),
         )
@@ -63,6 +76,11 @@ class IVehicleQuotation(form.Schema):
         )
 
     # notes
+    form.fieldset('additionalInfo',
+                  label=_(u"Additional info"),
+                  fields=['notes',]
+                  )
+
     notes = RichText(
             title=_(u"Notes"),
             required=False

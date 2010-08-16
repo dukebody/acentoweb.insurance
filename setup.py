@@ -28,6 +28,8 @@ setup(name='acentoweb.insurance',
           # -*- Extra requirements: -*-
           'Plone',
           'plone.app.dexterity',
+          'plone.namedfile [blobs]',
+          'plone.formwidget.namedfile',
       ],
       extras_require={
           'test': [

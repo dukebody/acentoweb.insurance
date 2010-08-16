@@ -18,7 +18,8 @@ class IVehicleQuotation(form.Schema):
                           'holderFamilyName',
                           'holderNIF',
                           'holderBirthDate',
-                          'holderLicenseDate',]
+                          'holderLicenseDate',
+                          'holderOwnership']
                   )
 
     holderName = schema.TextLine(
@@ -43,6 +44,86 @@ class IVehicleQuotation(form.Schema):
 
     holderOwnership = schema.Bool(
             title=_(u"Is the holder the vehicle owner?"),
+        )
+
+    # driver data (optional)
+    form.fieldset('driverData',
+                  label=_(u"Driver data"),
+                  fields=['driverName',
+                          'driverFamilyName',
+                          'driverNIF',
+                          'driverBirthDate',
+                          'driverLicenseDate',
+                          'driverOwnership']
+                  )
+
+    driverName = schema.TextLine(
+            title=_(u"Driver name"),
+            required=False,
+        )
+
+    driverFamilyName = schema.TextLine(
+            title=_(u"Driver family name"),
+            required=False,
+        )
+
+    driverNIF = schema.TextLine(
+            title=_(u"Driver identity number"),
+            required=False,        
+        )
+
+    driverBirthDate = schema.Date(
+            title=_(u"Driver birthday date"),
+            required=False,        
+        )
+
+    driverLicenseDate = schema.Date(
+            title=_(u"Driver driving license expedition date"),
+            required=False,
+        )
+
+    driverOwnership = schema.Bool(
+            title=_(u"Is the driver the vehicle owner?"),
+        )
+
+    # auxiliar driver data (optional)
+    form.fieldset('auxDriverData',
+                  label=_(u"Auxiliar driver data"),
+                  fields=['auxDriverName',
+                          'auxDriverFamilyName',
+                          'auxDriverNIF',
+                          'auxDriverBirthDate',
+                          'auxDriverLicenseDate',
+                          'auxDriverOwnership']
+                  )
+
+    auxDriverName = schema.TextLine(
+            title=_(u"Auxiliar driver name"),
+            required=False,        
+        )
+
+    auxDriverFamilyName = schema.TextLine(
+            title=_(u"Auxiliar driver family name"),
+            required=False,        
+        )
+
+    auxDriverNIF = schema.TextLine(
+            title=_(u"Auxiliar driver identity number"),
+            required=False,        
+        )
+
+    auxDriverBirthDate = schema.Date(
+            title=_(u"Auxiliar driver birthday date"),
+            required=False,        
+        )
+
+    auxDriverLicenseDate = schema.Date(
+            title=_(u"Auxiliar driver driving license expedition date"),
+            required=False,        
+        )
+
+    auxDriverOwnership = schema.Bool(
+            title=_(u"Is the auxiliar driver the vehicle owner?"),
         )
 
     # vehicle data

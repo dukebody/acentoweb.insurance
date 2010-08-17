@@ -65,7 +65,21 @@ class TestSetup(unittest.TestCase):
         quotation.invokeFactory('acentoweb.insurance.vehicleoffer', 'vh1')
         vh1 = quotation['vh1']
         self.failUnless(IVehicleOffer.providedBy(vh1))
-        
+
+    def test_wf_existence(self):
+        """Check that our custom workflows are present.
+        """
+        portal = self.layer['portal']
+        wt = portal.portal_workflow
+        self.failUnless('acentoweb.insurance.quotation_workflow' in wt.objectIds())
+
+    def test_quotationwf_bindings(self):
+        """Check that the quotation_workflow is binded to all quotation
+        types.
+        """
+        portal = self.layer['portal']
+        wt = portal.portal_workflow
+        self.failUnless('acentoweb.insurance.quotation_workflow' in wt.getChainForPortalType('acentoweb.insurance.vehiclequotation'))        
 
 def test_suite():
     suite = unittest.TestSuite()

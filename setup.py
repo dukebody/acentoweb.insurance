@@ -30,6 +30,7 @@ setup(name='acentoweb.insurance',
           'plone.app.dexterity',
           'plone.namedfile [blobs]',
           'plone.formwidget.namedfile',
+          'collective.wtf',
       ],
       extras_require={
           'test': [

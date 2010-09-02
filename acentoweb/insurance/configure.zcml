@@ -8,6 +8,8 @@
 
   <five:registerPackage package="." initialize=".initialize" />
 
+  <i18n:registerTranslations directory="locales" />
+
   <!-- Include configuration for dependencies listed in setup.py -->
   <includeDependencies package="." />
 

@@ -1,0 +1,469 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-09-02 10:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./content/communityrequest.py:422
+#: ./content/vehiclequotation.py:162
+msgid "Additional info"
+msgstr "Información adicional"
+
+#: ./content/communityrequest.py:417
+msgid "Agent code"
+msgstr "Código de agente"
+
+#: ./content/communityrequest.py:407
+msgid "Agent data"
+msgstr "Datos del agente"
+
+#: ./content/communityrequest.py:413
+msgid "Agent name"
+msgstr "Nombre del agente"
+
+#: ./content/communityrequest.py:332
+msgid "Alarms maintenance"
+msgstr "Mantenimiento de alarmas"
+
+#: ./profiles/default/types/acentoweb.insurance.communityrequest.xml
+msgid "An insurance quote request for a community."
+msgstr "Solicitud de cotización de seguro para comunidades."
+
+#: ./content/communityrequest.py:240
+msgid "Are the businesses included in the community?"
+msgstr "¿Están los locales de negocios incluidos en la comunidad?"
+
+#: ./content/communityrequest.py:184
+msgid "Are the garages included in the community houses insurance?"
+msgstr "¿Están los garajes incluidos en el seguro de comunidad?"
+
+#: ./content/communityrequest.py:175
+msgid "Are the garages included in the community?"
+msgstr "¿Están los garages incluidos en el seguro de comunidad?"
+
+#: ./content/communityrequest.py:151
+msgid "Are there any houses in the bottom floor?"
+msgstr "¿Hay casas en el último piso?"
+
+#: ./content/communityrequest.py:231
+msgid "Are there businesses in the building?"
+msgstr "¿Están los locales de negocios en el "
+
+#: ./content/communityrequest.py:171
+msgid "Are there garages?"
+msgstr "¿Hay garajes?"
+
+#: ./content/communityrequest.py:167
+msgid "Are there swimming pools?"
+msgstr "¿Hay piscinas?"
+
+#: ./content/vehicleoffer.py:24
+msgid "Attached documentation"
+msgstr "Documentación adjunta"
+
+#: ./content/vehiclequotation.py:117
+msgid "Auxiliar driver birthday date"
+msgstr "Fecha de nacimiento del conductor auxiliar"
+
+#: ./content/vehiclequotation.py:92
+msgid "Auxiliar driver data"
+msgstr "Datos del conductor auxiliar"
+
+#: ./content/vehiclequotation.py:122
+msgid "Auxiliar driver driving license expedition date"
+msgstr "Fecha de caducidad del carnet de conducir del conductor auxiliar"
+
+#: ./content/vehiclequotation.py:107
+msgid "Auxiliar driver family name"
+msgstr "Apellidos del conductor auxiliar"
+
+#: ./content/vehiclequotation.py:112
+msgid "Auxiliar driver identity number"
+msgstr "NIF del conductor auxiliar"
+
+#: ./content/vehiclequotation.py:102
+msgid "Auxiliar driver name"
+msgstr "Nombre del conductor auxiliar"
+
+#: ./content/communityrequest.py:86
+msgid "Building data"
+msgstr "Datos del edificio"
+
+#: ./content/communityrequest.py:258
+msgid "Businesses description"
+msgstr "Descripción del local"
+
+#: ./content/communityrequest.py:390
+msgid "Cellars continent"
+msgstr "Continente de los trasteros"
+
+#: ./profiles/default/types/acentoweb.insurance.communityrequest.xml
+msgid "Community Insurance Request"
+msgstr "Solicitud de cotización de comunidades"
+
+#: ./content/communityrequest.py:254
+msgid "Current company"
+msgstr "Empresa actual"
+
+#: ./content/communityrequest.py:308
+msgid "Detectors maintenance"
+msgstr "Mantenimiento de detectores"
+
+#: ./content/communityrequest.py:245
+msgid "Does the community currently have an insurance?"
+msgstr "¿Tiene la comunidad un seguro contratado ya?"
+
+#: ./content/communityrequest.py:210
+msgid "Does the community have shared gardens?"
+msgstr "¿Tiene la comunidad jardines compartidos?"
+
+#: ./content/communityrequest.py:225
+msgid "Drain Pipes repairments year"
+msgstr "Año de reparación de los desagües"
+
+#: ./content/vehiclequotation.py:77
+msgid "Driver birthday date"
+msgstr "Fecha de nacimiento del conductor"
+
+#: ./content/vehiclequotation.py:52
+msgid "Driver data"
+msgstr "Datos del conductor"
+
+#: ./content/vehiclequotation.py:82
+msgid "Driver driving license expedition date"
+msgstr "Fecha de caducidad del carnet de conducir del conductor"
+
+#: ./content/vehiclequotation.py:67
+msgid "Driver family name"
+msgstr "Apellidos del conductor"
+
+#: ./content/vehiclequotation.py:72
+msgid "Driver identity number"
+msgstr "NIF del conductor"
+
+#: ./content/vehiclequotation.py:62
+msgid "Driver name"
+msgstr "Nombre del conductor"
+
+#: ./content/communityrequest.py:219
+msgid "Electric repairments year"
+msgstr "Año de las reparaciones eléctricas"
+
+#: ./content/communityrequest.py:249
+msgid "Existing insurance expiry date"
+msgstr "Fecha de caducidad del seguro actual"
+
+#: ./content/communityrequest.py:296
+msgid "Extinguishers maintenance"
+msgstr "Mantenimiento de extintores"
+
+#: ./content/communityrequest.py:265
+msgid "Fire protections"
+msgstr "Protecciones contra el fuego"
+
+#: ./content/communityrequest.py:352
+msgid "Firemen distance"
+msgstr "Distancia al parque de bomberos"
+
+#: ./content/communityrequest.py:398
+msgid "Furniture contained"
+msgstr "Contenido muebles"
+
+#: ./content/communityrequest.py:386
+msgid "Garages continent"
+msgstr "Continente garajes"
+
+#: ./content/communityrequest.py:378
+msgid "High houses continent"
+msgstr "Continente de las casas en alto"
+
+#: ./content/communityrequest.py:28
+msgid "Holder NIF/CIF"
+msgstr "NIF/CIF del tomador"
+
+#: ./content/vehiclequotation.py:39
+msgid "Holder birthday date"
+msgstr "Fecha de nacimiento del tomador"
+
+#: ./content/communityrequest.py:15
+#: ./content/vehiclequotation.py:17
+msgid "Holder data"
+msgstr "Datos del tomador"
+
+#: ./content/vehiclequotation.py:43
+msgid "Holder driving license expedition date"
+msgstr "Fecha de caducidad del carnet de conducir del tomador"
+
+#: ./content/vehiclequotation.py:31
+msgid "Holder family name"
+msgstr "Apellidos del tomador"
+
+#: ./content/vehiclequotation.py:35
+msgid "Holder identity number"
+msgstr "NIF del tomador"
+
+#: ./content/communityrequest.py:24
+#: ./content/vehiclequotation.py:27
+msgid "Holder name"
+msgstr "Nombre del tomador"
+
+#: ./content/communityrequest.py:40
+msgid "Holder phone number"
+msgstr "Teléfono del tomador"
+
+#: ./content/communityrequest.py:36
+msgid "Holder province"
+msgstr "Provincia del tomador"
+
+#: ./content/communityrequest.py:32
+msgid "Holder town"
+msgstr "Ciudad del tomador"
+
+#: ./content/communityrequest.py:214
+msgid "Houses destination"
+msgstr "Destino de las casas"
+
+#: ./content/communityrequest.py:259
+msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
+msgstr "Si los locales están incluídos en la comunidad, introducir el número de locales, metros cuadrados y una descripción de las actividades de cada uno."
+
+#: ./content/communityrequest.py:60
+msgid "Insured NIF/CIF"
+msgstr "NIF/CIF del asegurado"
+
+#: ./content/communityrequest.py:76
+msgid "Insured contact person"
+msgstr "Persona de contacto"
+
+#: ./content/communityrequest.py:80
+msgid "Insured contact person phone number"
+msgstr "Teléfono de la persona de contacto"
+
+#: ./content/communityrequest.py:45
+msgid "Insured data"
+msgstr "Datos del asegurado"
+
+#: ./content/communityrequest.py:56
+msgid "Insured name"
+msgstr "Nombre del asegurado"
+
+#: ./content/communityrequest.py:72
+msgid "Insured phone number"
+msgstr "Teléfono del asegurado"
+
+#: ./content/communityrequest.py:68
+msgid "Insured province"
+msgstr ""
+
+#: ./content/communityrequest.py:64
+msgid "Insured town"
+msgstr "Ciudad del asegurado"
+
+#: ./content/vehiclequotation.py:127
+msgid "Is the auxiliar driver the vehicle owner?"
+msgstr ""
+
+#: ./content/vehiclequotation.py:87
+msgid "Is the driver the vehicle owner?"
+msgstr ""
+
+#: ./content/vehiclequotation.py:47
+msgid "Is the holder the vehicle owner?"
+msgstr ""
+
+#: ./content/vehicleoffer.py:15
+msgid "Juridical defense"
+msgstr ""
+
+#: ./content/communityrequest.py:220
+msgid "Leave blank if not performed"
+msgstr "Dejar en blanco si no fueron realizados"
+
+#: ./content/communityrequest.py:353
+msgid "Less than 15 km"
+msgstr "Menos de 15 km"
+
+#: ./content/communityrequest.py:215
+msgid "Main"
+msgstr "Principal"
+
+#: ./content/communityrequest.py:300
+msgid "Maintenance company"
+msgstr "Empresa de mantenimiento"
+
+#: ./content/communityrequest.py:353
+msgid "More than 15 km"
+msgstr "Más de 15 km"
+
+#: ./content/communityrequest.py:427
+#: ./content/vehicleoffer.py:19
+#: ./content/vehiclequotation.py:167
+msgid "Notes"
+msgstr "Notas"
+
+#: ./content/communityrequest.py:235
+msgid "Number of businesses in the building"
+msgstr "Número de locales en el edificio"
+
+#: ./content/communityrequest.py:163
+msgid "Number of cellars"
+msgstr "Número de trasteros"
+
+#: ./content/communityrequest.py:328
+msgid "Number of fire alarms"
+msgstr "Número de alarmas de incendio"
+
+#: ./content/communityrequest.py:304
+msgid "Number of fire detectors"
+msgstr "Número de detectores de incendio"
+
+#: ./content/communityrequest.py:292
+msgid "Number of fire extinguishers"
+msgstr "Número de extintores"
+
+#: ./content/communityrequest.py:316
+msgid "Number of fire water pumps"
+msgstr "Número de bocas de riego"
+
+#: ./content/communityrequest.py:139
+msgid "Number of floors high"
+msgstr "Número de pisos"
+
+#: ./content/communityrequest.py:147
+msgid "Number of houses in the building (total)"
+msgstr "Número de casas en el edificio (total)"
+
+#: ./content/communityrequest.py:143
+msgid "Number of houses per floor"
+msgstr "Número de casas por piso"
+
+#: ./content/communityrequest.py:127
+msgid "Number of main doors"
+msgstr "Número de puertas principales"
+
+#: ./content/communityrequest.py:201
+msgid "Number of offices"
+msgstr "Número de oficinas"
+
+#: ./content/communityrequest.py:188
+msgid "Number of parking lots in the garages"
+msgstr "Plazas de aparcamiento en los garajes"
+
+#: ./content/communityrequest.py:135
+msgid "Number of square meters built"
+msgstr "Metros cuadrados construidos"
+
+#: ./content/communityrequest.py:155
+msgid "Number of square meters per house"
+msgstr "Metros cuadrados por casa"
+
+#: ./content/communityrequest.py:196
+msgid "Number of square meters per unifamiliar or semi-detached house"
+msgstr "Metros cuadrados por vivienda unifamiliar o adosada"
+
+#: ./content/communityrequest.py:205
+msgid "Number of total square meters dedicated to offices"
+msgstr "Metros cuadrados dedicados a oficinas"
+
+#: ./content/communityrequest.py:159
+msgid "Number of underground floors"
+msgstr "Número de sótanos"
+
+#: ./content/communityrequest.py:192
+msgid "Number of unifamiliar or semi-detached houses"
+msgstr "Número de viviendas unifamiliares o adosadas"
+
+#: ./content/communityrequest.py:340
+msgid "Number of water dispensers"
+msgstr "Número de rociadores"
+
+#: ./content/communityrequest.py:131
+msgid "Other accesses"
+msgstr "Otros accesos"
+
+#: ./content/communityrequest.py:402
+msgid "Others contained"
+msgstr "Otros contenidos"
+
+#: ./content/communityrequest.py:215
+msgid "Secondary"
+msgstr "Secundario"
+
+#: ./content/communityrequest.py:180
+msgid "Should not be included in the total of the continent"
+msgstr "No debe ser incluido en el total del continente"
+
+#: ./content/communityrequest.py:197
+msgid "These should be included in the 'Built square meters' field."
+msgstr "Deben ser incluidos en el campo 'metros cuadrados construidos'."
+
+#: ./content/communityrequest.py:206
+msgid "This cannot be included in the 'Built square meters' field."
+msgstr "No debe ser incluido en el campo 'metros cuadrados construidos'."
+
+#: ./content/communityrequest.py:394
+msgid "Total contained"
+msgstr "Total contenido"
+
+#: ./content/communityrequest.py:374
+msgid "Total continent"
+msgstr "Total continente"
+
+#: ./content/communityrequest.py:382
+msgid "Unifamiliar or semi-detached houses continent"
+msgstr "Continente de viviendas unifamiliares y adosadas"
+
+#: ./content/communityrequest.py:179
+msgid "Value of each parking lot"
+msgstr "Valor de cada plaza de párking"
+
+#: ./content/communityrequest.py:360
+msgid "Values data"
+msgstr "Datos de valores"
+
+#: ./content/vehiclequotation.py:141
+msgid "Vehicle brand"
+msgstr "Marca del vehículo"
+
+#: ./content/vehiclequotation.py:132
+msgid "Vehicle data"
+msgstr ""
+
+#: ./content/vehiclequotation.py:157
+msgid "Vehicle first licensing date"
+msgstr ""
+
+#: ./content/vehiclequotation.py:153
+msgid "Vehicle license plate number"
+msgstr ""
+
+#: ./content/vehiclequotation.py:145
+msgid "Vehicle model"
+msgstr ""
+
+#: ./content/vehiclequotation.py:149
+msgid "Vehicle version"
+msgstr ""
+
+#: ./content/communityrequest.py:344
+msgid "Water dispensers maintenance"
+msgstr "Mantenimiento de rociadores"
+
+#: ./content/communityrequest.py:320
+msgid "Water pumps maintenance"
+msgstr "Mantenimiento de bocas de riego"
+
+#: ./content/communityrequest.py:123
+msgid "Year the building was built"
+msgstr "Año en el que se construyó el edificio"
+

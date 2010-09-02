@@ -71,7 +71,7 @@ class ICommunityRequest(form.Schema):
     insuredPhone = schema.TextLine(
         title=_(u"Insured phone number"),
         )
-    
+
     insuredContactPerson = schema.TextLine(
         title=_(u"Insured contact person"),
         )
@@ -170,7 +170,7 @@ class ICommunityRequest(form.Schema):
     garages = schema.Bool(
         title=_(u'Are there garages?'),
         )
-        
+
     garagesInCommunity = schema.Bool(
         title=_(u'Are the garages included in the community?'),
         )
@@ -179,7 +179,7 @@ class ICommunityRequest(form.Schema):
         title=_(u'Value of each parking lot'),
         description=_(u'Should not be included in the total of the continent'),
         )
-    
+
     garageInCommunityHousesInsurance = schema.Bool(
         title=_(u'Are the garages included in the community houses insurance?'),
         )
@@ -363,7 +363,7 @@ class ICommunityRequest(form.Schema):
                           'continentAddedHouses',
                           'continentGarages',
                           'continentCellars',
-                          
+
                           'containedTotal',
                           'containedFurniture',
                           'containedOthers',

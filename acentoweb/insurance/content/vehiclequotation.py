@@ -4,6 +4,7 @@ from zope import schema
 from plone.directives import form, dexterity
 
 from plone.app.textfield import RichText
+from collective.dnifield.field import DNI
 
 from acentoweb.insurance import _
 
@@ -30,7 +31,7 @@ class IVehicleQuotation(form.Schema):
             title=_(u"Holder family name"),
         )
 
-    holderNIF = schema.TextLine(
+    holderNIF = DNI(
             title=_(u"Holder identity number"),
         )
 

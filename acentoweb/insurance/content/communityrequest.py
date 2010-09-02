@@ -194,7 +194,7 @@ class ICommunityRequest(form.Schema):
 
     nSquareMetersAddHouse = schema.Int(
         title=_(u'Number of square meters per unifamiliar or semi-detached house'),
-        description=_(u'These should be included in the "Built square meters" field.'),
+        description=_(u"These should be included in the 'Built square meters' field."),
         )
 
     nOffices = schema.Int(
@@ -203,7 +203,7 @@ class ICommunityRequest(form.Schema):
 
     nSquareMetersOffices = schema.Int(
         title=_(u'Number of total square meters dedicated to offices'),
-        description=_(u'This cannot be included in the "Built square meters" field.'),
+        description=_(u"This cannot be included in the 'Built square meters' field."),
         )
 
     gardens = schema.Bool(
@@ -212,7 +212,7 @@ class ICommunityRequest(form.Schema):
 
     housesDestination = schema.Choice(
         title=_(u'Houses destination'),
-        values=([_(u'Main'), _(u'Secondary')]),
+        values=[_(u'Main'), _(u'Secondary')],
         )
 
     electricRepairmentsYear = schema.Int(

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0a1'
+version = '0.1a1'
 
 setup(name='acentoweb.insurance',
       version=version,

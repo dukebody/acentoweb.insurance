@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-09-02 10:41+0000\n"
+"POT-Creation-Date: 2010-09-03 20:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: acentoweb.insurance\n"
 
-#: ./content/communityrequest.py:422
+#: ./content/communityrequest.py:427
 #: ./content/vehiclequotation.py:162
 msgid "Additional info"
 msgstr ""
 
-#: ./content/communityrequest.py:417
+#: ./content/communityrequest.py:422
 msgid "Agent code"
 msgstr ""
 
-#: ./content/communityrequest.py:407
+#: ./content/communityrequest.py:412
 msgid "Agent data"
 msgstr ""
 
-#: ./content/communityrequest.py:413
+#: ./content/communityrequest.py:418
 msgid "Agent name"
 msgstr ""
 
-#: ./content/communityrequest.py:332
+#: ./content/communityrequest.py:335
 msgid "Alarms maintenance"
 msgstr ""
 
@@ -42,31 +42,31 @@ msgstr ""
 msgid "An insurance quote request for a community."
 msgstr ""
 
-#: ./content/communityrequest.py:240
+#: ./content/communityrequest.py:243
 msgid "Are the businesses included in the community?"
 msgstr ""
 
-#: ./content/communityrequest.py:184
+#: ./content/communityrequest.py:185
 msgid "Are the garages included in the community houses insurance?"
 msgstr ""
 
-#: ./content/communityrequest.py:175
+#: ./content/communityrequest.py:176
 msgid "Are the garages included in the community?"
 msgstr ""
 
-#: ./content/communityrequest.py:151
+#: ./content/communityrequest.py:152
 msgid "Are there any houses in the bottom floor?"
 msgstr ""
 
-#: ./content/communityrequest.py:231
+#: ./content/communityrequest.py:234
 msgid "Are there businesses in the building?"
 msgstr ""
 
-#: ./content/communityrequest.py:171
+#: ./content/communityrequest.py:172
 msgid "Are there garages?"
 msgstr ""
 
-#: ./content/communityrequest.py:167
+#: ./content/communityrequest.py:168
 msgid "Are there swimming pools?"
 msgstr ""
 
@@ -98,15 +98,15 @@ msgstr ""
 msgid "Auxiliar driver name"
 msgstr ""
 
-#: ./content/communityrequest.py:86
+#: ./content/communityrequest.py:87
 msgid "Building data"
 msgstr ""
 
-#: ./content/communityrequest.py:258
+#: ./content/communityrequest.py:261
 msgid "Businesses description"
 msgstr ""
 
-#: ./content/communityrequest.py:390
+#: ./content/communityrequest.py:395
 msgid "Cellars continent"
 msgstr ""
 
@@ -114,23 +114,23 @@ msgstr ""
 msgid "Community Insurance Request"
 msgstr ""
 
-#: ./content/communityrequest.py:254
+#: ./content/communityrequest.py:257
 msgid "Current company"
 msgstr ""
 
-#: ./content/communityrequest.py:308
+#: ./content/communityrequest.py:311
 msgid "Detectors maintenance"
 msgstr ""
 
-#: ./content/communityrequest.py:245
+#: ./content/communityrequest.py:248
 msgid "Does the community currently have an insurance?"
 msgstr ""
 
-#: ./content/communityrequest.py:210
+#: ./content/communityrequest.py:211
 msgid "Does the community have shared gardens?"
 msgstr ""
 
-#: ./content/communityrequest.py:225
+#: ./content/communityrequest.py:228
 msgid "Drain Pipes repairments year"
 msgstr ""
 
@@ -158,39 +158,39 @@ msgstr ""
 msgid "Driver name"
 msgstr ""
 
-#: ./content/communityrequest.py:219
+#: ./content/communityrequest.py:222
 msgid "Electric repairments year"
 msgstr ""
 
-#: ./content/communityrequest.py:249
+#: ./content/communityrequest.py:252
 msgid "Existing insurance expiry date"
 msgstr ""
 
-#: ./content/communityrequest.py:296
+#: ./content/communityrequest.py:299
 msgid "Extinguishers maintenance"
 msgstr ""
 
-#: ./content/communityrequest.py:265
+#: ./content/communityrequest.py:268
 msgid "Fire protections"
 msgstr ""
 
-#: ./content/communityrequest.py:352
+#: ./content/communityrequest.py:355
 msgid "Firemen distance"
 msgstr ""
 
-#: ./content/communityrequest.py:398
+#: ./content/communityrequest.py:403
 msgid "Furniture contained"
 msgstr ""
 
-#: ./content/communityrequest.py:386
+#: ./content/communityrequest.py:391
 msgid "Garages continent"
 msgstr ""
 
-#: ./content/communityrequest.py:378
+#: ./content/communityrequest.py:383
 msgid "High houses continent"
 msgstr ""
 
-#: ./content/communityrequest.py:28
+#: ./content/communityrequest.py:29
 msgid "Holder NIF/CIF"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Holder birthday date"
 msgstr ""
 
-#: ./content/communityrequest.py:15
+#: ./content/communityrequest.py:16
 #: ./content/vehiclequotation.py:17
 msgid "Holder data"
 msgstr ""
@@ -215,60 +215,60 @@ msgstr ""
 msgid "Holder identity number"
 msgstr ""
 
-#: ./content/communityrequest.py:24
+#: ./content/communityrequest.py:25
 #: ./content/vehiclequotation.py:27
 msgid "Holder name"
 msgstr ""
 
-#: ./content/communityrequest.py:40
+#: ./content/communityrequest.py:41
 msgid "Holder phone number"
 msgstr ""
 
-#: ./content/communityrequest.py:36
+#: ./content/communityrequest.py:37
 msgid "Holder province"
 msgstr ""
 
-#: ./content/communityrequest.py:32
+#: ./content/communityrequest.py:33
 msgid "Holder town"
 msgstr ""
 
-#: ./content/communityrequest.py:214
+#: ./content/communityrequest.py:215
 msgid "Houses destination"
 msgstr ""
 
-#: ./content/communityrequest.py:259
+#: ./content/communityrequest.py:262
 msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
 msgstr ""
 
-#: ./content/communityrequest.py:60
+#: ./content/communityrequest.py:61
 msgid "Insured NIF/CIF"
 msgstr ""
 
-#: ./content/communityrequest.py:76
+#: ./content/communityrequest.py:77
 msgid "Insured contact person"
 msgstr ""
 
-#: ./content/communityrequest.py:80
+#: ./content/communityrequest.py:81
 msgid "Insured contact person phone number"
 msgstr ""
 
-#: ./content/communityrequest.py:45
+#: ./content/communityrequest.py:46
 msgid "Insured data"
 msgstr ""
 
-#: ./content/communityrequest.py:56
+#: ./content/communityrequest.py:57
 msgid "Insured name"
 msgstr ""
 
-#: ./content/communityrequest.py:72
+#: ./content/communityrequest.py:73
 msgid "Insured phone number"
 msgstr ""
 
-#: ./content/communityrequest.py:68
+#: ./content/communityrequest.py:69
 msgid "Insured province"
 msgstr ""
 
-#: ./content/communityrequest.py:64
+#: ./content/communityrequest.py:65
 msgid "Insured town"
 msgstr ""
 
@@ -288,149 +288,149 @@ msgstr ""
 msgid "Juridical defense"
 msgstr ""
 
-#: ./content/communityrequest.py:220
+#: ./content/communityrequest.py:223
 msgid "Leave blank if not performed"
 msgstr ""
 
-#: ./content/communityrequest.py:353
+#: ./content/communityrequest.py:357
 msgid "Less than 15 km"
 msgstr ""
 
-#: ./content/communityrequest.py:215
+#: ./content/communityrequest.py:216
 msgid "Main"
 msgstr ""
 
-#: ./content/communityrequest.py:300
+#: ./content/communityrequest.py:303
 msgid "Maintenance company"
 msgstr ""
 
-#: ./content/communityrequest.py:353
+#: ./content/communityrequest.py:356
 msgid "More than 15 km"
 msgstr ""
 
-#: ./content/communityrequest.py:427
+#: ./content/communityrequest.py:432
 #: ./content/vehicleoffer.py:19
 #: ./content/vehiclequotation.py:167
 msgid "Notes"
 msgstr ""
 
-#: ./content/communityrequest.py:235
+#: ./content/communityrequest.py:238
 msgid "Number of businesses in the building"
 msgstr ""
 
-#: ./content/communityrequest.py:163
+#: ./content/communityrequest.py:164
 msgid "Number of cellars"
 msgstr ""
 
-#: ./content/communityrequest.py:328
+#: ./content/communityrequest.py:331
 msgid "Number of fire alarms"
 msgstr ""
 
-#: ./content/communityrequest.py:304
+#: ./content/communityrequest.py:307
 msgid "Number of fire detectors"
 msgstr ""
 
-#: ./content/communityrequest.py:292
+#: ./content/communityrequest.py:295
 msgid "Number of fire extinguishers"
 msgstr ""
 
-#: ./content/communityrequest.py:316
+#: ./content/communityrequest.py:319
 msgid "Number of fire water pumps"
 msgstr ""
 
-#: ./content/communityrequest.py:139
+#: ./content/communityrequest.py:140
 msgid "Number of floors high"
 msgstr ""
 
-#: ./content/communityrequest.py:147
+#: ./content/communityrequest.py:148
 msgid "Number of houses in the building (total)"
 msgstr ""
 
-#: ./content/communityrequest.py:143
+#: ./content/communityrequest.py:144
 msgid "Number of houses per floor"
 msgstr ""
 
-#: ./content/communityrequest.py:127
+#: ./content/communityrequest.py:128
 msgid "Number of main doors"
 msgstr ""
 
-#: ./content/communityrequest.py:201
+#: ./content/communityrequest.py:202
 msgid "Number of offices"
 msgstr ""
 
-#: ./content/communityrequest.py:188
+#: ./content/communityrequest.py:189
 msgid "Number of parking lots in the garages"
 msgstr ""
 
-#: ./content/communityrequest.py:135
+#: ./content/communityrequest.py:136
 msgid "Number of square meters built"
 msgstr ""
 
-#: ./content/communityrequest.py:155
+#: ./content/communityrequest.py:156
 msgid "Number of square meters per house"
 msgstr ""
 
-#: ./content/communityrequest.py:196
+#: ./content/communityrequest.py:197
 msgid "Number of square meters per unifamiliar or semi-detached house"
 msgstr ""
 
-#: ./content/communityrequest.py:205
+#: ./content/communityrequest.py:206
 msgid "Number of total square meters dedicated to offices"
 msgstr ""
 
-#: ./content/communityrequest.py:159
+#: ./content/communityrequest.py:160
 msgid "Number of underground floors"
 msgstr ""
 
-#: ./content/communityrequest.py:192
+#: ./content/communityrequest.py:193
 msgid "Number of unifamiliar or semi-detached houses"
 msgstr ""
 
-#: ./content/communityrequest.py:340
+#: ./content/communityrequest.py:343
 msgid "Number of water dispensers"
 msgstr ""
 
-#: ./content/communityrequest.py:131
+#: ./content/communityrequest.py:132
 msgid "Other accesses"
 msgstr ""
 
-#: ./content/communityrequest.py:402
+#: ./content/communityrequest.py:407
 msgid "Others contained"
 msgstr ""
 
-#: ./content/communityrequest.py:215
+#: ./content/communityrequest.py:217
 msgid "Secondary"
 msgstr ""
 
-#: ./content/communityrequest.py:180
+#: ./content/communityrequest.py:181
 msgid "Should not be included in the total of the continent"
 msgstr ""
 
-#: ./content/communityrequest.py:197
+#: ./content/communityrequest.py:198
 msgid "These should be included in the 'Built square meters' field."
 msgstr ""
 
-#: ./content/communityrequest.py:206
+#: ./content/communityrequest.py:207
 msgid "This cannot be included in the 'Built square meters' field."
 msgstr ""
 
-#: ./content/communityrequest.py:394
+#: ./content/communityrequest.py:399
 msgid "Total contained"
 msgstr ""
 
-#: ./content/communityrequest.py:374
+#: ./content/communityrequest.py:379
 msgid "Total continent"
 msgstr ""
 
-#: ./content/communityrequest.py:382
+#: ./content/communityrequest.py:387
 msgid "Unifamiliar or semi-detached houses continent"
 msgstr ""
 
-#: ./content/communityrequest.py:179
+#: ./content/communityrequest.py:180
 msgid "Value of each parking lot"
 msgstr ""
 
-#: ./content/communityrequest.py:360
+#: ./content/communityrequest.py:365
 msgid "Values data"
 msgstr ""
 
@@ -458,15 +458,15 @@ msgstr ""
 msgid "Vehicle version"
 msgstr ""
 
-#: ./content/communityrequest.py:344
+#: ./content/communityrequest.py:347
 msgid "Water dispensers maintenance"
 msgstr ""
 
-#: ./content/communityrequest.py:320
+#: ./content/communityrequest.py:323
 msgid "Water pumps maintenance"
 msgstr ""
 
-#: ./content/communityrequest.py:123
+#: ./content/communityrequest.py:124
 msgid "Year the building was built"
 msgstr ""
 

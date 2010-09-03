@@ -1,10 +1,12 @@
 from zope import schema
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
 from plone.directives import form
 
 from plone.app.textfield import RichText
 
 from acentoweb.insurance import _
+
 
 class ICommunityRequest(form.Schema):
     """A conference presenter. Presenters can be added anywhere.
@@ -212,7 +214,10 @@ class ICommunityRequest(form.Schema):
 
     housesDestination = schema.Choice(
         title=_(u'Houses destination'),
-        values=[_(u'Main'), _(u'Secondary')],
+        vocabulary=SimpleVocabulary(
+            [SimpleTerm(value='main', title=_(u'Main')),
+             SimpleTerm(value='secondary', title=_(u'Secondary'))],
+            )
         )
 
     electricRepairmentsYear = schema.Int(
@@ -350,7 +355,10 @@ class ICommunityRequest(form.Schema):
 
     firemenDistance = schema.Choice(
         title=_(u'Firemen distance'),
-        values=[_(u'More than 15 km'), _(u'Less than 15 km')],
+        vocabulary=SimpleVocabulary(
+            [SimpleTerm(value='more15km', title=_(u'More than 15 km')),
+             SimpleTerm(value='less15km', title=_(u'Less than 15 km'))],
+            ),
         )
 
     # XXX: ommiting robbery!!!

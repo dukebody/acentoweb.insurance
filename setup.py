@@ -31,6 +31,7 @@ setup(name='acentoweb.insurance',
           'plone.namedfile [blobs]',
           'plone.formwidget.namedfile',
           'collective.wtf',
+          'collective.dnifield',
       ],
       extras_require={
           'test': [

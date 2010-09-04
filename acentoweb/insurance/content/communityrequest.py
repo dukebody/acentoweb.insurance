@@ -16,14 +16,14 @@ class ICommunityRequest(form.Schema):
     # holder data
     form.fieldset('holderData',
                   label=_(u"Holder"),
-                  fields=['holderName',
+                  fields=['title', # holderName
                           'holderId',
                           'holderTown',
                           'holderProvince',
                           'holderPhone']
                   )
 
-    holderName = schema.TextLine(
+    title = schema.TextLine(
         title=_(u"Holder name"),
         )
 

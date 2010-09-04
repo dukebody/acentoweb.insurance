@@ -15,7 +15,7 @@ class ICommunityRequest(form.Schema):
 
     # holder data
     form.fieldset('holderData',
-                  label=_(u"Holder data"),
+                  label=_(u"Holder"),
                   fields=['holderName',
                           'holderId',
                           'holderTown',
@@ -45,7 +45,7 @@ class ICommunityRequest(form.Schema):
 
     # insured data (blank if same as holder)
     form.fieldset('insuredData',
-                  label=_(u"Insured data"),
+                  label=_(u"Insured"),
                   fields=['insuredName',
                           'insuredId',
                           'insuredTown',
@@ -86,7 +86,7 @@ class ICommunityRequest(form.Schema):
     # building data
 
     form.fieldset('buildingData',
-                  label=_(u"Building data"),
+                  label=_(u"Building"),
                   fields=['buildingYear',
                           'nMainDoors',
                           'otherAccesses',
@@ -380,7 +380,7 @@ class ICommunityRequest(form.Schema):
 
     # insurance values
     form.fieldset('valuesData',
-                  label=_(u"Values data"),
+                  label=_(u"Values"),
                   fields=['continentTotal',
                           'continentHighHouses',
                           'continentAddedHouses',
@@ -427,7 +427,7 @@ class ICommunityRequest(form.Schema):
 
     # agent data
     form.fieldset('agentData',
-                  label=_(u"Agent data"),
+                  label=_(u"Agent"),
                   fields=['agentName',
                           'agentCode',]
                   )

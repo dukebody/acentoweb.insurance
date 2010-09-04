@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-09-04 10:15+0000\n"
-"PO-Revision-Date: 2010-09-04 11:59+0200\n"
+"POT-Creation-Date: 2010-09-04 10:57+0000\n"
+"PO-Revision-Date: 2010-09-04 12:58+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,13 +19,13 @@ msgstr ""
 msgid "Additional info"
 msgstr "Información adicional"
 
+#: ./content/communityrequest.py:430
+msgid "Agent"
+msgstr "Agente"
+
 #: ./content/communityrequest.py:440
 msgid "Agent code"
 msgstr "Código de agente"
-
-#: ./content/communityrequest.py:430
-msgid "Agent data"
-msgstr "Datos del agente"
 
 #: ./content/communityrequest.py:436
 msgid "Agent name"
@@ -96,8 +96,8 @@ msgid "Auxiliar driver name"
 msgstr "Nombre del conductor auxiliar"
 
 #: ./content/communityrequest.py:89
-msgid "Building data"
-msgstr "Datos del edificio"
+msgid "Building"
+msgstr "Edificio"
 
 #: ./content/communityrequest.py:273
 msgid "Businesses description"
@@ -187,6 +187,10 @@ msgstr "Continente garajes"
 msgid "High houses continent"
 msgstr "Continente de las casas en alto"
 
+#: ./content/communityrequest.py:18
+msgid "Holder"
+msgstr "Tomador"
+
 #: ./content/communityrequest.py:31
 msgid "Holder NIF/CIF"
 msgstr "NIF/CIF del tomador"
@@ -195,7 +199,6 @@ msgstr "NIF/CIF del tomador"
 msgid "Holder birthday date"
 msgstr "Fecha de nacimiento del tomador"
 
-#: ./content/communityrequest.py:18
 #: ./content/vehiclequotation.py:17
 msgid "Holder data"
 msgstr "Datos del tomador"
@@ -237,6 +240,10 @@ msgstr "Destino de las casas"
 msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
 msgstr "Si los locales están incluídos en la comunidad, introducir el número de locales, metros cuadrados y una descripción de las actividades de cada uno."
 
+#: ./content/communityrequest.py:48
+msgid "Insured"
+msgstr "Asegurado"
+
 #: ./content/communityrequest.py:63
 msgid "Insured NIF/CIF"
 msgstr "NIF/CIF del asegurado"
@@ -248,10 +255,6 @@ msgstr "Persona de contacto"
 #: ./content/communityrequest.py:83
 msgid "Insured contact person phone number"
 msgstr "Teléfono de la persona de contacto"
-
-#: ./content/communityrequest.py:48
-msgid "Insured data"
-msgstr "Datos del asegurado"
 
 #: ./content/communityrequest.py:59
 msgid "Insured name"
@@ -432,8 +435,8 @@ msgid "Value of each parking lot"
 msgstr "Valor de cada plaza de párking"
 
 #: ./content/communityrequest.py:383
-msgid "Values data"
-msgstr "Datos de valores"
+msgid "Values"
+msgstr "Valores"
 
 #: ./content/vehiclequotation.py:141
 msgid "Vehicle brand"

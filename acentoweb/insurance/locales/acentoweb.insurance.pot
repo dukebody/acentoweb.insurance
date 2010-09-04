@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-09-04 10:15+0000\n"
+"POT-Creation-Date: 2010-09-04 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,12 @@ msgstr ""
 msgid "Additional info"
 msgstr ""
 
-#: ./content/communityrequest.py:440
-msgid "Agent code"
+#: ./content/communityrequest.py:430
+msgid "Agent"
 msgstr ""
 
-#: ./content/communityrequest.py:430
-msgid "Agent data"
+#: ./content/communityrequest.py:440
+msgid "Agent code"
 msgstr ""
 
 #: ./content/communityrequest.py:436
@@ -99,7 +99,7 @@ msgid "Auxiliar driver name"
 msgstr ""
 
 #: ./content/communityrequest.py:89
-msgid "Building data"
+msgid "Building"
 msgstr ""
 
 #: ./content/communityrequest.py:273
@@ -190,6 +190,10 @@ msgstr ""
 msgid "High houses continent"
 msgstr ""
 
+#: ./content/communityrequest.py:18
+msgid "Holder"
+msgstr ""
+
 #: ./content/communityrequest.py:31
 msgid "Holder NIF/CIF"
 msgstr ""
@@ -198,7 +202,6 @@ msgstr ""
 msgid "Holder birthday date"
 msgstr ""
 
-#: ./content/communityrequest.py:18
 #: ./content/vehiclequotation.py:17
 msgid "Holder data"
 msgstr ""
@@ -240,6 +243,10 @@ msgstr ""
 msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
 msgstr ""
 
+#: ./content/communityrequest.py:48
+msgid "Insured"
+msgstr ""
+
 #: ./content/communityrequest.py:63
 msgid "Insured NIF/CIF"
 msgstr ""
@@ -250,10 +257,6 @@ msgstr ""
 
 #: ./content/communityrequest.py:83
 msgid "Insured contact person phone number"
-msgstr ""
-
-#: ./content/communityrequest.py:48
-msgid "Insured data"
 msgstr ""
 
 #: ./content/communityrequest.py:59
@@ -435,7 +438,7 @@ msgid "Value of each parking lot"
 msgstr ""
 
 #: ./content/communityrequest.py:383
-msgid "Values data"
+msgid "Values"
 msgstr ""
 
 #: ./content/vehiclequotation.py:141

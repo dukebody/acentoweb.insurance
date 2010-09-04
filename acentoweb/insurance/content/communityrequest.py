@@ -6,6 +6,7 @@ from plone.directives import form
 from plone.app.textfield import RichText
 
 from acentoweb.insurance import _
+from acentoweb.insurance.vocabulary import YesNoVocabulary
 
 
 class ICommunityRequest(form.Schema):
@@ -149,8 +150,9 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of houses in the building (total)'),
         )
 
-    housesInBottomFloor = schema.Bool(
+    housesInBottomFloor = schema.Choice(
         title=_(u'Are there any houses in the bottom floor?'),
+        vocabulary=YesNoVocabulary,
         )
 
     nSquareMetersHouse = schema.Int(
@@ -165,16 +167,19 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of cellars'),
         )
 
-    swimmingPool = schema.Bool(
+    swimmingPool = schema.Choice(
         title=_(u'Are there swimming pools?'),
+        vocabulary=YesNoVocabulary,
         )
 
-    garages = schema.Bool(
+    garages = schema.Choice(
         title=_(u'Are there garages?'),
+        vocabulary=YesNoVocabulary,
         )
 
-    garagesInCommunity = schema.Bool(
+    garagesInCommunity = schema.Choice(
         title=_(u'Are the garages included in the community?'),
+        vocabulary=YesNoVocabulary
         )
 
     garageValue = schema.TextLine(
@@ -182,8 +187,9 @@ class ICommunityRequest(form.Schema):
         description=_(u'Should not be included in the total of the continent'),
         )
 
-    garageInCommunityHousesInsurance = schema.Bool(
+    garageInCommunityHousesInsurance = schema.Choice(
         title=_(u'Are the garages included in the community houses insurance?'),
+        vocabulary=YesNoVocabulary,
         )
 
     nParkingLots = schema.Int(
@@ -208,8 +214,9 @@ class ICommunityRequest(form.Schema):
         description=_(u"This cannot be included in the 'Built square meters' field."),
         )
 
-    gardens = schema.Bool(
+    gardens = schema.Choice(
         title=_(u'Does the community have shared gardens?'),
+        vocabulary=YesNoVocabulary,
         )
 
     housesDestination = schema.Choice(
@@ -232,8 +239,9 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    businesses = schema.Bool(
+    businesses = schema.Choice(
         title=_(u'Are there businesses in the building?'),
+        vocabulary=YesNoVocabulary,
         )
 
     nBusinesses = schema.Int(
@@ -241,13 +249,15 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    businessesInCommunity = schema.Bool(
-        title=_(u'Are the businesses included in the community?')
+    businessesInCommunity = schema.Choice(
+        title=_(u'Are the businesses included in the community?'),
+        vocabulary=YesNoVocabulary,
         )
 
 
-    existingInsurance = schema.Bool(
+    existingInsurance = schema.Choice(
         title=_(u'Does the community currently have an insurance?'),
+        vocabulary=YesNoVocabulary,
         )
 
     existingInsuranceExpiration = schema.Date(
@@ -297,8 +307,9 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of fire extinguishers'),
         )
 
-    extinguishersMaintenance = schema.Bool(
+    extinguishersMaintenance = schema.Choice(
         title=_(u'Extinguishers maintenance'),
+        vocabulary=YesNoVocabulary,
         )
 
     extinguishersCompany = schema.TextLine(
@@ -309,8 +320,9 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of fire detectors'),
         )
 
-    detectorsMaintenance = schema.Bool(
+    detectorsMaintenance = schema.Choice(
         title=_(u'Detectors maintenance'),
+        vocabulary=YesNoVocabulary,
         )
 
     detectorsCompany = schema.TextLine(
@@ -321,8 +333,9 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of fire water pumps'),
         )
 
-    waterPumpsMaintenance = schema.Bool(
+    waterPumpsMaintenance = schema.Choice(
         title=_(u'Water pumps maintenance'),
+        vocabulary=YesNoVocabulary,
         )
 
     waterPumpsCompany = schema.TextLine(
@@ -333,8 +346,9 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of fire alarms'),
         )
 
-    alarmsMaintenance = schema.Bool(
+    alarmsMaintenance = schema.Choice(
         title=_(u'Alarms maintenance'),
+        vocabulary=YesNoVocabulary,
         )
 
     alarmsCompany = schema.TextLine(
@@ -345,8 +359,9 @@ class ICommunityRequest(form.Schema):
         title=_(u'Number of water dispensers'),
         )
 
-    waterDispensersMaintenance = schema.Bool(
+    waterDispensersMaintenance = schema.Choice(
         title=_(u'Water dispensers maintenance'),
+        vocabulary=YesNoVocabulary,
         )
 
     waterDispensersCompany = schema.TextLine(

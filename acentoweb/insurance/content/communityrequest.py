@@ -10,7 +10,7 @@ from acentoweb.insurance.vocabulary import YesNoVocabulary
 
 
 class ICommunityRequest(form.Schema):
-    """A conference presenter. Presenters can be added anywhere.
+    """A community quotation request.
     """
 
     # holder data

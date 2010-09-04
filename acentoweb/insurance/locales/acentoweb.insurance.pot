@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-09-04 10:58+0000\n"
+"POT-Creation-Date: 2010-09-04 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: acentoweb.insurance\n"
+
+#: ./content/communityoffer.py:69
+msgid "24h assistance"
+msgstr ""
 
 #: ./content/communityrequest.py:445
 #: ./content/vehiclequotation.py:162
@@ -36,6 +40,10 @@ msgstr ""
 
 #: ./content/communityrequest.py:350
 msgid "Alarms maintenance"
+msgstr ""
+
+#: ./profiles/default/types/acentoweb.insurance.communityoffer.xml
+msgid "An insurance offer for a community."
 msgstr ""
 
 #: ./profiles/default/types/acentoweb.insurance.communityrequest.xml
@@ -102,20 +110,52 @@ msgstr ""
 msgid "Building"
 msgstr ""
 
+#: ./content/communityoffer.py:40
+msgid "Burglary"
+msgstr ""
+
 #: ./content/communityrequest.py:273
 msgid "Businesses description"
+msgstr ""
+
+#: ./content/communityoffer.py:22
+msgid "CR (euros)"
+msgstr ""
+
+#: ./content/communityoffer.py:26
+msgid "CR excess for water damage"
 msgstr ""
 
 #: ./content/communityrequest.py:413
 msgid "Cellars continent"
 msgstr ""
 
+#: ./content/communityoffer.py:45
+msgid "Communitary waters"
+msgstr ""
+
+#: ./profiles/default/types/acentoweb.insurance.communityoffer.xml
+msgid "Community Insurance Offer"
+msgstr ""
+
 #: ./profiles/default/types/acentoweb.insurance.communityrequest.xml
 msgid "Community Insurance Request"
 msgstr ""
 
+#: ./content/communityoffer.py:13
+msgid "Company"
+msgstr ""
+
+#: ./content/communityoffer.py:30
+msgid "Consider third owners"
+msgstr ""
+
 #: ./content/communityrequest.py:269
 msgid "Current company"
+msgstr ""
+
+#: ./content/communityoffer.py:74
+msgid "Damage claim"
 msgstr ""
 
 #: ./content/communityrequest.py:324
@@ -162,12 +202,20 @@ msgstr ""
 msgid "Electric repairments year"
 msgstr ""
 
+#: ./content/communityoffer.py:55
+msgid "Excess (euros)"
+msgstr ""
+
 #: ./content/communityrequest.py:264
 msgid "Existing insurance expiry date"
 msgstr ""
 
 #: ./content/communityrequest.py:311
 msgid "Extinguishers maintenance"
+msgstr ""
+
+#: ./content/communityoffer.py:17
+msgid "Fire"
 msgstr ""
 
 #: ./content/communityrequest.py:280
@@ -184,6 +232,10 @@ msgstr ""
 
 #: ./content/communityrequest.py:409
 msgid "Garages continent"
+msgstr ""
+
+#: ./content/communityoffer.py:35
+msgid "Glasses"
 msgstr ""
 
 #: ./content/communityrequest.py:401
@@ -287,6 +339,7 @@ msgstr ""
 msgid "Is the holder the vehicle owner?"
 msgstr ""
 
+#: ./content/communityoffer.py:79
 #: ./content/vehicleoffer.py:15
 msgid "Juridical defense"
 msgstr ""
@@ -405,6 +458,10 @@ msgstr ""
 msgid "Others contained"
 msgstr ""
 
+#: ./content/communityoffer.py:50
+msgid "Private waters"
+msgstr ""
+
 #: ./content/communityrequest.py:226
 msgid "Secondary"
 msgstr ""
@@ -413,12 +470,20 @@ msgstr ""
 msgid "Should not be included in the total of the continent"
 msgstr ""
 
+#: ./content/communityoffer.py:64
+msgid "Stetical damages"
+msgstr ""
+
 #: ./content/communityrequest.py:205
 msgid "These should be included in the 'Built square meters' field."
 msgstr ""
 
 #: ./content/communityrequest.py:214
 msgid "This cannot be included in the 'Built square meters' field."
+msgstr ""
+
+#: ./content/communityoffer.py:84
+msgid "Total anual premium"
 msgstr ""
 
 #: ./content/communityrequest.py:417
@@ -463,6 +528,10 @@ msgstr ""
 
 #: ./content/vehiclequotation.py:149
 msgid "Vehicle version"
+msgstr ""
+
+#: ./content/communityoffer.py:59
+msgid "Warranty extension"
 msgstr ""
 
 #: ./content/communityrequest.py:363

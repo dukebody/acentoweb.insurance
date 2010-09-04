@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-09-04 10:57+0000\n"
-"PO-Revision-Date: 2010-09-04 13:36+0200\n"
+"PO-Revision-Date: 2010-09-04 14:13+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr "¿Están los garajes incluidos en el seguro de comunidad?"
 
 #: ./content/communityrequest.py:181
 msgid "Are the garages included in the community?"
-msgstr "¿Están los garages incluidos en el seguro de comunidad?"
+msgstr "¿Están los garajes incluidos en el seguro de comunidad?"
 
 #: ./content/communityrequest.py:154
 msgid "Are there any houses in the bottom floor?"
@@ -57,7 +57,7 @@ msgstr "¿Hay casas en el último piso?"
 
 #: ./content/communityrequest.py:243
 msgid "Are there businesses in the building?"
-msgstr "¿Están los locales de negocios en el "
+msgstr "¿Están los locales de negocios dentro del edificio?"
 
 #: ./content/communityrequest.py:176
 msgid "Are there garages?"

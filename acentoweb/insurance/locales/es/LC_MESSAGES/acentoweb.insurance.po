@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-09-04 10:57+0000\n"
-"PO-Revision-Date: 2010-09-04 12:58+0200\n"
+"PO-Revision-Date: 2010-09-04 13:36+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -230,7 +230,7 @@ msgstr "Provincia del tomador"
 
 #: ./content/communityrequest.py:35
 msgid "Holder town"
-msgstr "Ciudad del tomador"
+msgstr "Localidad del tomador"
 
 #: ./content/communityrequest.py:223
 msgid "Houses destination"
@@ -270,7 +270,7 @@ msgstr "Provincia del asegurado"
 
 #: ./content/communityrequest.py:67
 msgid "Insured town"
-msgstr "Ciudad del asegurado"
+msgstr "Localidad del asegurado"
 
 #: ./content/vehiclequotation.py:127
 msgid "Is the auxiliar driver the vehicle owner?"
@@ -432,7 +432,7 @@ msgstr "Continente de viviendas unifamiliares y adosadas"
 
 #: ./content/communityrequest.py:186
 msgid "Value of each parking lot"
-msgstr "Valor de cada plaza de párking"
+msgstr "Valor de cada plaza de aparcamiento"
 
 #: ./content/communityrequest.py:383
 msgid "Values"

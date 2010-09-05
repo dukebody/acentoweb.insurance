@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-09-05 17:51+0000\n"
+"POT-Creation-Date: 2010-09-05 19:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: acentoweb.insurance\n"
 
-#: ./browser/community_comparative.pt:36
+#: ./browser/community_comparative.pt:35
 #: ./content/communityoffer.py:69
 msgid "24h assistance"
 msgstr ""
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Building"
 msgstr ""
 
-#: ./browser/community_comparative.pt:30
+#: ./browser/community_comparative.pt:29
 #: ./content/communityoffer.py:40
 msgid "Burglary"
 msgstr ""
@@ -120,12 +120,12 @@ msgstr ""
 msgid "Businesses description"
 msgstr ""
 
-#: ./browser/community_comparative.pt:26
+#: ./browser/community_comparative.pt:25
 #: ./content/communityoffer.py:22
 msgid "CR"
 msgstr ""
 
-#: ./browser/community_comparative.pt:27
+#: ./browser/community_comparative.pt:26
 #: ./content/communityoffer.py:26
 msgid "CR excess for water damage"
 msgstr ""
@@ -134,7 +134,7 @@ msgstr ""
 msgid "Cellars continent"
 msgstr ""
 
-#: ./browser/community_comparative.pt:31
+#: ./browser/community_comparative.pt:30
 #: ./content/communityoffer.py:45
 msgid "Communitary waters"
 msgstr ""
@@ -147,16 +147,16 @@ msgstr ""
 msgid "Community Insurance Request"
 msgstr ""
 
-#: ./browser/community_comparative.pt:24
+#: ./browser/community_comparative.pt:23
 #: ./content/communityoffer.py:13
 msgid "Company"
 msgstr ""
 
-#: ./browser/community_comparative.pt:14
+#: ./browser/community_comparative.pt:13
 msgid "Comparative Offers Summary"
 msgstr ""
 
-#: ./browser/community_comparative.pt:28
+#: ./browser/community_comparative.pt:27
 #: ./content/communityoffer.py:30
 msgid "Consider third owners"
 msgstr ""
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Current company"
 msgstr ""
 
-#: ./browser/community_comparative.pt:37
+#: ./browser/community_comparative.pt:36
 #: ./content/communityoffer.py:74
 msgid "Damage claim"
 msgstr ""
@@ -214,7 +214,7 @@ msgstr ""
 msgid "Electric repairments year"
 msgstr ""
 
-#: ./browser/community_comparative.pt:33
+#: ./browser/community_comparative.pt:32
 #: ./content/communityoffer.py:55
 msgid "Excess"
 msgstr ""
@@ -227,7 +227,7 @@ msgstr ""
 msgid "Extinguishers maintenance"
 msgstr ""
 
-#: ./browser/community_comparative.pt:25
+#: ./browser/community_comparative.pt:24
 #: ./content/communityoffer.py:17
 msgid "Fire"
 msgstr ""
@@ -248,7 +248,7 @@ msgstr ""
 msgid "Garages continent"
 msgstr ""
 
-#: ./browser/community_comparative.pt:29
+#: ./browser/community_comparative.pt:28
 #: ./content/communityoffer.py:35
 msgid "Glasses"
 msgstr ""
@@ -354,7 +354,7 @@ msgstr ""
 msgid "Is the holder the vehicle owner?"
 msgstr ""
 
-#: ./browser/community_comparative.pt:38
+#: ./browser/community_comparative.pt:37
 #: ./content/communityoffer.py:79
 #: ./content/vehicleoffer.py:15
 msgid "Juridical defense"
@@ -474,7 +474,7 @@ msgstr ""
 msgid "Others contained"
 msgstr ""
 
-#: ./browser/community_comparative.pt:32
+#: ./browser/community_comparative.pt:31
 #: ./content/communityoffer.py:50
 msgid "Private waters"
 msgstr ""
@@ -483,11 +483,15 @@ msgstr ""
 msgid "Secondary"
 msgstr ""
 
+#: ./browser/community_offers_summary.pt:4
+msgid "See a ${comparative-offers-summary}"
+msgstr ""
+
 #: ./content/communityrequest.py:187
 msgid "Should not be included in the total of the continent"
 msgstr ""
 
-#: ./browser/community_comparative.pt:35
+#: ./browser/community_comparative.pt:34
 #: ./content/communityoffer.py:64
 msgid "Stetical damages"
 msgstr ""
@@ -500,7 +504,7 @@ msgstr ""
 msgid "This cannot be included in the 'Built square meters' field."
 msgstr ""
 
-#: ./browser/community_comparative.pt:39
+#: ./browser/community_comparative.pt:38
 #: ./content/communityoffer.py:84
 msgid "Total anual premium"
 msgstr ""
@@ -549,7 +553,7 @@ msgstr ""
 msgid "Vehicle version"
 msgstr ""
 
-#: ./browser/community_comparative.pt:34
+#: ./browser/community_comparative.pt:33
 #: ./content/communityoffer.py:59
 msgid "Warranty extension"
 msgstr ""
@@ -568,5 +572,9 @@ msgstr ""
 
 #: ./vocabulary.py:6
 msgid "Yes"
+msgstr ""
+
+#: ./browser/community_offers_summary.pt:5
+msgid "comparative offers summary"
 msgstr ""
 

@@ -1,0 +1,8 @@
+<p tal:condition="context/listFolderContents"
+   i18n:domain="acentoweb.insurance"
+   i18n:translate="">See a
+  <span i18n:name="comparative-offers-summary">
+    <a href="@@comparative"
+       i18n:translate="">comparative offers summary</a>.
+  </span>
+</p>

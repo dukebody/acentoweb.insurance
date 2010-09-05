@@ -10,4 +10,12 @@
       permission="zope2.View"
       />
 
+  <browser:viewlet
+      name="acentoweb.insurance.community_offers_summary"
+      for="..content.communityrequest.ICommunityRequest"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      template="community_offers_summary.pt"
+      permission="zope2.View"
+      />
+
 </configure>

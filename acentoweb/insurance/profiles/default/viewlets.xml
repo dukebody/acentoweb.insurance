@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.abovecontentbody" skinname="Sunburst Theme" based-on="Plone Default">
+    <viewlet name="acentoweb.insurance.community_offers_summary" insert-after="*" />
+  </order>
+</object>

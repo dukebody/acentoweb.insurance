@@ -6,8 +6,7 @@
       i18n:domain="acentoweb.insurance"
       metal:use-macro="context/main_template/macros/master">
 
-    <metal:block fill-slot="main"
-                 >
+    <metal:block fill-slot="main">
 
       <div tal:replace="structure provider:plone.abovecontenttitle" />
 

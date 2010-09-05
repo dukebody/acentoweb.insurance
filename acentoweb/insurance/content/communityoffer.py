@@ -19,7 +19,7 @@ class ICommunityOffer(form.Schema):
         )
 
     cr = schema.Decimal(
-        title=_(u'CR (euros)'),
+        title=_(u'CR'),
         )
 
     crWaterExcess = schema.Decimal(
@@ -52,7 +52,7 @@ class ICommunityOffer(form.Schema):
         )
 
     excess = schema.Decimal(
-        title=_(u'Excess (euros)'),
+        title=_(u'Excess'),
         )
 
     warrantyExtension = schema.Choice(

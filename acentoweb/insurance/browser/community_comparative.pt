@@ -1,0 +1,70 @@
+<tal:hide tal:define="dummy python:request.set('disable_plone.leftcolumn', 1)" />
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="acentoweb.insurance"
+      metal:use-macro="context/main_template/macros/master">
+
+    <metal:block fill-slot="main"
+                 >
+
+      <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+      <h1 class="documentFirstHeading" i18n:translate="">Comparative Offers Summary</h1>
+
+      <div tal:replace="structure provider:plone.belowcontenttitle" />
+      <div tal:replace="structure provider:plone.abovecontentbody" />
+
+      <div id="content-core"
+           tal:define="offers context/listFolderContents">
+        <table class="listing" id="offers-listing">
+          <thead>
+            <tr>
+              <th i18n:translate="">Company</th>
+              <th i18n:translate="">Fire</th>
+              <th i18n:translate="">CR</th>
+              <th i18n:translate="">CR excess for water damage</th>
+              <th i18n:translate="">Consider third owners</th>
+              <th i18n:translate="">Glasses</th>
+              <th i18n:translate="">Burglary</th>
+              <th i18n:translate="">Communitary waters</th>
+              <th i18n:translate="">Private waters</th>
+              <th i18n:translate="">Excess</th>
+              <th i18n:translate="">Warranty extension</th>
+              <th i18n:translate="">Stetical damages</th>
+              <th i18n:translate="">24h assistance</th>
+              <th i18n:translate="">Damage claim</th>
+              <th i18n:translate="">Juridical defense</th>
+              <th i18n:translate="">Total anual premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr tal:repeat="offer offers"
+                tal:define="getTitleFromValue nocall: view/getTitleFromValue">
+              <td tal:content="offer/title"></td>
+              <td tal:content="python: getTitleFromValue(offer.fire)"></td>
+              <td tal:content="offer/cr"></td>
+              <td tal:content="offer/crWaterExcess"></td>
+              <td tal:content="python: getTitleFromValue(offer.crThirds)"></td>
+              <td tal:content="python: getTitleFromValue(offer.glasses)"></td>
+              <td tal:content="python: getTitleFromValue(offer.burglary)"></td>
+              <td tal:content="python: getTitleFromValue(offer.communityWaters)"></td>
+              <td tal:content="python: getTitleFromValue(offer.privateWaters)"></td>
+              <td tal:content="offer/excess"></td>
+              <td tal:content="python: getTitleFromValue(offer.warrantyExtension)"></td>
+              <td tal:content="python: getTitleFromValue(offer.steticalDamages)"></td>
+              <td tal:content="python: getTitleFromValue(offer.twentyForSevenAssistance)"></td>
+              <td tal:content="python: getTitleFromValue(offer.damageClaim)"></td>
+              <td tal:content="python: getTitleFromValue(offer.juridicalDefense)"></td>
+              <td tal:content="offer/totalAnualPremium"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </metal:block>
+
+</html>

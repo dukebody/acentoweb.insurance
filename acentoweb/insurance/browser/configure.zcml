@@ -1,0 +1,13 @@
+<configure
+    xmlns:zope="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:page
+      name="comparative"
+      for="acentoweb.insurance.content.communityrequest.ICommunityRequest"
+      class=".community_comparative.CommunityComparativeView"
+      template="community_comparative.pt"
+      permission="zope2.View"
+      />
+
+</configure>

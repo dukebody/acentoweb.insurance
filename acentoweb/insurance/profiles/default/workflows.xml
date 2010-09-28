@@ -4,5 +4,8 @@
     <type type_id="acentoweb.insurance.vehiclequotation">
       <bound-workflow workflow_id="acentoweb.insurance.quotation_workflow"/>
     </type>
+    <type type_id="acentoweb.insurance.communityrequest">
+      <bound-workflow workflow_id="acentoweb.insurance.quotation_workflow"/>
+    </type>
   </bindings>
 </object>

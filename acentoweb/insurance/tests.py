@@ -83,7 +83,8 @@ class TestSetup(unittest.TestCase):
         """
         portal = self.layer['portal']
         wt = portal.portal_workflow
-        self.failUnless('acentoweb.insurance.quotation_workflow' in wt.getChainForPortalType('acentoweb.insurance.vehiclequotation'))        
+        self.failUnless('acentoweb.insurance.quotation_workflow' in wt.getChainForPortalType('acentoweb.insurance.vehiclequotation'))
+        self.failUnless('acentoweb.insurance.quotation_workflow' in wt.getChainForPortalType('acentoweb.insurance.communityrequest'))
 
     def test_allowedtypesintocommunityrequest(self):
         """

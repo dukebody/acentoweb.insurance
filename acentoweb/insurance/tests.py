@@ -85,6 +85,17 @@ class TestSetup(unittest.TestCase):
         wt = portal.portal_workflow
         self.failUnless('acentoweb.insurance.quotation_workflow' in wt.getChainForPortalType('acentoweb.insurance.vehiclequotation'))        
 
+    def test_allowedtypesintocommunityrequest(self):
+        """
+        Check that files and community quotation offers are addable
+        into community quotation requests.
+        """
+        portal = self.layer['portal']
+        typesTool = getToolByName(portal, 'portal_types')
+        allowed_types = typesTool['acentoweb.insurance.communityrequest'].getProperty('allowed_content_types')
+        self.assertTrue('File' in allowed_types)
+        self.assertTrue('acentoweb.insurance.communityoffer' in allowed_types)
+
 def test_suite():
     suite = unittest.TestSuite()
     suite.addTests([

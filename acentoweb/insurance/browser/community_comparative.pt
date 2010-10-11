@@ -16,7 +16,7 @@
       <div tal:replace="structure provider:plone.abovecontentbody" />
 
       <div id="content-core"
-           tal:define="offers context/listFolderContents">
+           tal:define="offers python:view.getOffers()">
         <table class="listing" id="offers-listing">
           <thead>
             <tr>

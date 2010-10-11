@@ -11,3 +11,7 @@ class CommunityComparativeView(BrowserView):
         """
 
         return YesNoVocabulary.getTerm(value).title
+
+    def getOffers(self):
+        return self.context.listFolderContents(
+            contentFilter={'portal_type':'acentoweb.insurance.communityoffer'})

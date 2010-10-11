@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_workflow">
+  <object name="acentoweb.insurance.quotation_workflow" meta_type="Workflow"/>
   <bindings>
     <type type_id="acentoweb.insurance.vehiclequotation">
       <bound-workflow workflow_id="acentoweb.insurance.quotation_workflow"/>

@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"POT-Creation-Date: 2010-10-11 17:30+0000\n"
+"PO-Revision-Date: 2010-10-11 20:32+0200\n"
+"Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+msgid "Draft"
+msgstr "Borrador"
+
+msgid "Mark the quotation as quoted"
+msgstr "Marcar la solicitud como cotizada"
+
+msgid "Pending quotation"
+msgstr "Cotización pendiente"
+
+msgid "Pending quote"
+msgstr "Cotización pendiente"
+
+msgid "Quotations pending"
+msgstr "Cotizaciones pendientes"
+
+msgid "Quote"
+msgstr "Cotizar"
+
+msgid "Quoted"
+msgstr "Cotizado"
+
+msgid "Reject"
+msgstr "Rechazar"
+
+msgid "Reject the quotation"
+msgstr "Rechazar la solicitud"
+
+msgid "Submit"
+msgstr "Enviar para publicación"
+
+msgid "Submit the quotation for review"
+msgstr "Enviar la solicitud para su revisión"
+
+msgid "The quotation has ben quoted"
+msgstr "La solicitud ha sido cotizada"
+
+msgid "The quotation is being drafted."
+msgstr "La solicitud está en proceso de elaboración"
+
+msgid "The quotation is pending"
+msgstr "La cotización está en proceso de revisión"
+

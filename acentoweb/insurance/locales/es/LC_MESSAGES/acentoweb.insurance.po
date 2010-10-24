@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2010-10-11 18:29+0000\n"
-"PO-Revision-Date: 2010-10-11 13:41+0200\n"
+"POT-Creation-Date: 2010-10-24 17:24+0000\n"
+"PO-Revision-Date: 2010-10-24 19:25+0200\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -144,7 +144,6 @@ msgstr "Oferta de seguro de comunidad"
 msgid "Community Insurance Request"
 msgstr "Solicitud de cotización de comunidades"
 
-#: ./browser/community_comparative.pt:23
 #: ./content/communityoffer.py:13
 msgid "Company"
 msgstr "Empresa"
@@ -306,6 +305,10 @@ msgstr "Destino de las casas"
 #: ./content/communityrequest.py:312
 msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
 msgstr "Si los locales están incluídos en la comunidad, introducir el número de locales, metros cuadrados y una descripción de las actividades de cada uno."
+
+#: ./browser/community_comparative.pt:23
+msgid "Insurance company"
+msgstr "Aseguradora"
 
 #: ./content/communityrequest.py:52
 msgid "Insured"
@@ -481,8 +484,8 @@ msgid "Secondary"
 msgstr "Secundario"
 
 #: ./browser/community_offers_summary.pt:4
-msgid "See a ${comparative-offers-summary}"
-msgstr "Ver una ${comparative-offers-summary}"
+msgid "See ${comparative-offers-summary}"
+msgstr "Ver ${comparative-offers-summary}"
 
 #: ./content/communityrequest.py:212
 msgid "Should not be included in the total of the continent"

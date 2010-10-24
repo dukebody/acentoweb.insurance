@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-10-11 18:29+0000\n"
+"POT-Creation-Date: 2010-10-24 17:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,7 +147,6 @@ msgstr ""
 msgid "Community Insurance Request"
 msgstr ""
 
-#: ./browser/community_comparative.pt:23
 #: ./content/communityoffer.py:13
 msgid "Company"
 msgstr ""
@@ -308,6 +307,10 @@ msgstr ""
 
 #: ./content/communityrequest.py:312
 msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
+msgstr ""
+
+#: ./browser/community_comparative.pt:23
+msgid "Insurance company"
 msgstr ""
 
 #: ./content/communityrequest.py:52
@@ -484,7 +487,7 @@ msgid "Secondary"
 msgstr ""
 
 #: ./browser/community_offers_summary.pt:4
-msgid "See a ${comparative-offers-summary}"
+msgid "See ${comparative-offers-summary}"
 msgstr ""
 
 #: ./content/communityrequest.py:212

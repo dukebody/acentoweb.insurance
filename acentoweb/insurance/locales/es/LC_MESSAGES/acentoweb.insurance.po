@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2010-10-24 17:24+0000\n"
-"PO-Revision-Date: 2010-10-24 19:25+0200\n"
+"POT-Creation-Date: 2010-11-01 12:51+0000\n"
+"PO-Revision-Date: 2010-11-01 13:53+0100\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,10 @@ msgstr "Asistencia 24h"
 msgid "Additional info"
 msgstr "Información adicional"
 
+#: ./content/communitypolicy.py:38
+msgid "Additional notes"
+msgstr "Notas adicionales"
+
 #: ./content/communityrequest.py:492
 msgid "Agent"
 msgstr "Agente"
@@ -43,6 +47,10 @@ msgstr "Mantenimiento de alarmas"
 #: ./profiles/default/types/acentoweb.insurance.communityoffer.xml
 msgid "An insurance offer for a community."
 msgstr "Oferta de seguro para comunidades."
+
+#: ./profiles/default/types/acentoweb.insurance.communitypolicy.xml
+msgid "An insurance policy for a community."
+msgstr "Póliza de seguro de comunidad"
 
 #: ./profiles/default/types/acentoweb.insurance.communityrequest.xml
 msgid "An insurance quote request for a community."
@@ -104,6 +112,10 @@ msgstr "NIF del conductor auxiliar"
 msgid "Auxiliar driver name"
 msgstr "Nombre del conductor auxiliar"
 
+#: ./content/communitypolicy.py:25
+msgid "Bank account number"
+msgstr "Número de cuenta corriente bancaria"
+
 #: ./content/communityrequest.py:100
 msgid "Building"
 msgstr "Edificio"
@@ -140,11 +152,16 @@ msgstr "Aguas comunes"
 msgid "Community Insurance Offer"
 msgstr "Oferta de seguro de comunidad"
 
+#: ./profiles/default/types/acentoweb.insurance.communitypolicy.xml
+msgid "Community Insurance Policy"
+msgstr "Póliza de seguro de comunidad"
+
 #: ./profiles/default/types/acentoweb.insurance.communityrequest.xml
 msgid "Community Insurance Request"
 msgstr "Solicitud de cotización de comunidades"
 
 #: ./content/communityoffer.py:13
+#: ./content/communitypolicy.py:17
 msgid "Company"
 msgstr "Empresa"
 
@@ -205,6 +222,18 @@ msgstr "NIF del conductor"
 #: ./content/vehiclequotation.py:62
 msgid "Driver name"
 msgstr "Nombre del conductor"
+
+#: ./content/communitypolicy.py:32
+msgid "Each six months"
+msgstr "Semestralmente"
+
+#: ./content/communitypolicy.py:33
+msgid "Each three months"
+msgstr "Trimestralmente"
+
+#: ./content/communitypolicy.py:21
+msgid "Effective date"
+msgstr "Fecha de efecto"
 
 #: ./content/communityrequest.py:265
 msgid "Electric repairments year"
@@ -380,6 +409,10 @@ msgstr "Empresa de mantenimiento"
 msgid "More than 15 km"
 msgstr "Más de 15 km"
 
+#: ./content/communitypolicy.py:13
+msgid "NIF/CIF"
+msgstr "NIF/CIF"
+
 #: ./vocabulary.py:7
 msgid "No"
 msgstr "No"
@@ -473,6 +506,10 @@ msgstr "Otros accesos"
 #: ./content/communityrequest.py:486
 msgid "Others contained"
 msgstr "Otros contenidos"
+
+#: ./content/communitypolicy.py:29
+msgid "Payment method"
+msgstr "Método de pago"
 
 #: ./browser/community_comparative.pt:31
 #: ./content/communityoffer.py:50
@@ -569,6 +606,10 @@ msgstr "Mantenimiento de bocas de riego"
 #: ./content/communityrequest.py:137
 msgid "Year the building was built"
 msgstr "Año en el que se construyó el edificio"
+
+#: ./content/communitypolicy.py:31
+msgid "Yearly"
+msgstr "Anualmente"
 
 #: ./vocabulary.py:6
 msgid "Yes"

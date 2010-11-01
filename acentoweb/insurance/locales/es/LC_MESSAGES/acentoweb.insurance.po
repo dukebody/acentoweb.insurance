@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2010-11-01 12:51+0000\n"
+"POT-Creation-Date: 2010-11-01 13:06+0000\n"
 "PO-Revision-Date: 2010-11-01 13:53+0100\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: acentoweb.insurance\n"
 
-#: ./browser/community_comparative.pt:35
+#: ./browser/community_comparative.pt:36
 #: ./content/communityoffer.py:69
 msgid "24h assistance"
 msgstr "Asistencia 24h"
@@ -120,7 +120,7 @@ msgstr "Número de cuenta corriente bancaria"
 msgid "Building"
 msgstr "Edificio"
 
-#: ./browser/community_comparative.pt:29
+#: ./browser/community_comparative.pt:30
 #: ./content/communityoffer.py:40
 msgid "Burglary"
 msgstr "Robo"
@@ -129,12 +129,12 @@ msgstr "Robo"
 msgid "Businesses description"
 msgstr "Descripción del local"
 
-#: ./browser/community_comparative.pt:25
+#: ./browser/community_comparative.pt:26
 #: ./content/communityoffer.py:22
 msgid "CR"
 msgstr "RC"
 
-#: ./browser/community_comparative.pt:26
+#: ./browser/community_comparative.pt:27
 #: ./content/communityoffer.py:26
 msgid "CR excess for water damage"
 msgstr "Franquicia RC daños por agua"
@@ -143,7 +143,7 @@ msgstr "Franquicia RC daños por agua"
 msgid "Cellars continent"
 msgstr "Continente de los trasteros"
 
-#: ./browser/community_comparative.pt:30
+#: ./browser/community_comparative.pt:31
 #: ./content/communityoffer.py:45
 msgid "Communitary waters"
 msgstr "Aguas comunes"
@@ -169,7 +169,7 @@ msgstr "Empresa"
 msgid "Comparative Offers Summary"
 msgstr "Resumen comparativo de ofertas"
 
-#: ./browser/community_comparative.pt:27
+#: ./browser/community_comparative.pt:28
 #: ./content/communityoffer.py:30
 msgid "Consider third owners"
 msgstr "Consideración terceros propietarios"
@@ -178,7 +178,7 @@ msgstr "Consideración terceros propietarios"
 msgid "Current company"
 msgstr "Empresa actual"
 
-#: ./browser/community_comparative.pt:36
+#: ./browser/community_comparative.pt:37
 #: ./content/communityoffer.py:74
 msgid "Damage claim"
 msgstr "Reclamación daños"
@@ -239,7 +239,7 @@ msgstr "Fecha de efecto"
 msgid "Electric repairments year"
 msgstr "Año de las reparaciones eléctricas"
 
-#: ./browser/community_comparative.pt:32
+#: ./browser/community_comparative.pt:33
 #: ./content/communityoffer.py:55
 msgid "Excess"
 msgstr "Franquicia"
@@ -252,7 +252,7 @@ msgstr "Fecha de caducidad del seguro actual"
 msgid "Extinguishers maintenance"
 msgstr "Mantenimiento de extintores"
 
-#: ./browser/community_comparative.pt:24
+#: ./browser/community_comparative.pt:25
 #: ./content/communityoffer.py:17
 msgid "Fire"
 msgstr "Incendio"
@@ -273,7 +273,7 @@ msgstr "Contenido muebles"
 msgid "Garages continent"
 msgstr "Continente garajes"
 
-#: ./browser/community_comparative.pt:28
+#: ./browser/community_comparative.pt:29
 #: ./content/communityoffer.py:35
 msgid "Glasses"
 msgstr "Cristales"
@@ -335,7 +335,7 @@ msgstr "Destino de las casas"
 msgid "If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one."
 msgstr "Si los locales están incluídos en la comunidad, introducir el número de locales, metros cuadrados y una descripción de las actividades de cada uno."
 
-#: ./browser/community_comparative.pt:23
+#: ./browser/community_comparative.pt:24
 msgid "Insurance company"
 msgstr "Aseguradora"
 
@@ -383,7 +383,11 @@ msgstr "¿Es el conductor el propietario del vehículo?"
 msgid "Is the holder the vehicle owner?"
 msgstr "¿Es el tomador el propietario del vehículo?"
 
-#: ./browser/community_comparative.pt:37
+#: ./browser/community_comparative.pt:47
+msgid "Issue policy"
+msgstr ""
+
+#: ./browser/community_comparative.pt:38
 #: ./content/communityoffer.py:79
 #: ./content/vehicleoffer.py:15
 msgid "Juridical defense"
@@ -511,7 +515,7 @@ msgstr "Otros contenidos"
 msgid "Payment method"
 msgstr "Método de pago"
 
-#: ./browser/community_comparative.pt:31
+#: ./browser/community_comparative.pt:32
 #: ./content/communityoffer.py:50
 msgid "Private waters"
 msgstr "Aguas privadas"
@@ -528,7 +532,7 @@ msgstr "Ver ${comparative-offers-summary}"
 msgid "Should not be included in the total of the continent"
 msgstr "No debe ser incluido en el total del continente"
 
-#: ./browser/community_comparative.pt:34
+#: ./browser/community_comparative.pt:35
 #: ./content/communityoffer.py:64
 msgid "Stetical damages"
 msgstr "Daños estéticos"
@@ -541,7 +545,7 @@ msgstr "Deben ser incluidos en el campo 'metros cuadrados construidos'."
 msgid "This cannot be included in the 'Built square meters' field."
 msgstr "No debe ser incluido en el campo 'metros cuadrados construidos'."
 
-#: ./browser/community_comparative.pt:38
+#: ./browser/community_comparative.pt:39
 #: ./content/communityoffer.py:84
 msgid "Total anual premium"
 msgstr "Prima total anual"
@@ -590,7 +594,7 @@ msgstr "Modelo del vehículo"
 msgid "Vehicle version"
 msgstr "Versión del vehículo"
 
-#: ./browser/community_comparative.pt:33
+#: ./browser/community_comparative.pt:34
 #: ./content/communityoffer.py:59
 msgid "Warranty extension"
 msgstr "Extensión garantías"

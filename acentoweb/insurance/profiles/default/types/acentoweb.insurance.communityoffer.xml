@@ -7,7 +7,7 @@
  <property name="description" i18n:translate="">An insurance offer for a community.</property>
  <property name="content_icon">user.gif</property>
  <property name="allow_discussion">True</property>
- <property name="global_allow">True</property>
+ <property name="global_allow">False</property>
  <property name="filter_content_types">False</property>
  <property name="allowed_content_types" />
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "POT-Creation-Date: 2010-11-01 13:06+0000\n"
-"PO-Revision-Date: 2010-11-01 13:53+0100\n"
+"PO-Revision-Date: 2010-11-01 14:12+0100\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -385,7 +385,7 @@ msgstr "¿Es el tomador el propietario del vehículo?"
 
 #: ./browser/community_comparative.pt:47
 msgid "Issue policy"
-msgstr ""
+msgstr "Emitir póliza"
 
 #: ./browser/community_comparative.pt:38
 #: ./content/communityoffer.py:79

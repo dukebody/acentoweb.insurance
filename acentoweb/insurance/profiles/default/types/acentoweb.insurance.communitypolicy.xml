@@ -1,25 +1,21 @@
 <?xml version="1.0"?>
-<object name="acentoweb.insurance.communityrequest" meta_type="Dexterity FTI"
+<object name="acentoweb.insurance.communitypolicy" meta_type="Dexterity FTI"
    i18n:domain="acentoweb.insurance" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
  <!-- Basic metadata -->
- <property name="title" i18n:translate="">Community Insurance Request</property>
- <property name="description" i18n:translate="">An insurance quote request for a community.</property>
+ <property name="title" i18n:translate="">Community Insurance Policy</property>
+ <property name="description" i18n:translate="">An insurance policy for a community.</property>
  <property name="content_icon">user.gif</property>
  <property name="allow_discussion">True</property>
- <property name="global_allow">True</property>
- <property name="filter_content_types">True</property>
- <property name="allowed_content_types">
-   <element value="acentoweb.insurance.communityoffer" />
-   <element value="acentoweb.insurance.communitypolicy" />
-   <element value="File" />
- </property>
+ <property name="global_allow">False</property>
+ <property name="filter_content_types">False</property>
+ <property name="allowed_content_types" />
 
  <!-- schema interface -->
- <property name="schema">acentoweb.insurance.content.communityrequest.ICommunityRequest</property>
+ <property name="schema">acentoweb.insurance.content.communitypolicy.ICommunityPolicy</property>
 
  <!-- class used for content items -->
- <property name="klass">plone.dexterity.content.Container</property>
+ <property name="klass">plone.dexterity.content.Item</property>
 
  <!-- add permission -->
  <property name="add_permission">cmf.AddPortalContent</property>

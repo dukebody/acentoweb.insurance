@@ -4,4 +4,5 @@
  <object name="acentoweb.insurance.vehicleoffer" meta_type="Dexterity FTI" />
  <object name="acentoweb.insurance.communityrequest" meta_type="Dexterity FTI" />
  <object name="acentoweb.insurance.communityoffer" meta_type="Dexterity FTI" />
+ <object name="acentoweb.insurance.communitypolicy" meta_type="Dexterity FTI" />
 </object>

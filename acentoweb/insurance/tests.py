@@ -57,6 +57,11 @@ class TestSetup(unittest.TestCase):
         typesTool = getToolByName(portal, 'portal_types')
         self.assertNotEqual(typesTool.getTypeInfo('acentoweb.insurance.communityrequest'), None)
 
+    def test_communitypolicy_installed(self):
+        portal = self.layer['portal']
+        typesTool = getToolByName(portal, 'portal_types')
+        self.assertNotEqual(typesTool.getTypeInfo('acentoweb.insurance.communitypolicy'), None)
+
     def test_vehicleoffer_adding(self):
         """Check that we can add vehicle insurance offers into
         vehicle quotations.

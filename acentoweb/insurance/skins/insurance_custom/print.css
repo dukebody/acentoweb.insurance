@@ -53,6 +53,10 @@ table.listing td.companyName {
     background-color: #F3F3F3;
 }
 
+.issuePolicy {
+    display: none;
+}
+
 /* Page break class for use when printing */
 div.pageBreak {
 	page-break-before: always;

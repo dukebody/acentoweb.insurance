@@ -20,7 +20,7 @@
         <table class="listing" id="offers-listing">
           <thead>
             <tr>
-              <th></th>
+              <th class="issuePolicy"></th>
               <th i18n:translate="">Insurance company</th>
               <th i18n:translate="">Fire</th>
               <th i18n:translate="">CR</th>
@@ -42,7 +42,7 @@
           <tbody>
             <tr tal:repeat="offer offers"
                 tal:define="getTitleFromValue nocall: view/getTitleFromValue">
-              <td>
+              <td class="issuePolicy">
                 <a tal:attributes="href string:${context/absolute_url}/++add++acentoweb.insurance.communitypolicy?form.widgets.company=${offer/title}">
                   <img src="add-icon-16x16.png"
                        alt="Issue policy"

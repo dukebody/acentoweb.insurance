@@ -47,7 +47,7 @@
                   <img src="add-icon-16x16.png"
                        alt="Issue policy"
                        title="Issue policy"
-                       i18n:attributes="alt title" />
+                       i18n:attributes="alt; title" />
                 </a>
               </td>
               <td class="companyName" tal:content="offer/title"></td>

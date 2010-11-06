@@ -11,7 +11,6 @@
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
    <element value="acentoweb.insurance.communityoffer" />
-   <element value="acentoweb.insurance.communitypolicy" />
    <element value="File" />
  </property>
 

@@ -40,6 +40,7 @@
   <description i18n:translate="">The quotation is pending</description>
   <exit-transition transition_id="reject"/>
   <exit-transition transition_id="quote"/>
+  <exit-transition transition_id="expire"/>
   <permission-map name="Access contents information" acquired="False">
    <permission-role>Editor</permission-role>
    <permission-role>Manager</permission-role>
@@ -63,6 +64,58 @@
         i18n:attributes="title">
   <description i18n:translate="">
     The quotation has been quoted
+  </description>
+  <exit-transition transition_id="reject"/>
+  <exit-transition transition_id="close"/>
+  <exit-transition transition_id="expire"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Reviewer</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Reviewer</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="expired" title="Expired"
+        i18n:attributes="title">
+  <description i18n:translate="">
+    The quotation has expired
+  </description>
+  <exit-transition transition_id="reject"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Reviewer</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+   <permission-role>Reader</permission-role>
+   <permission-role>Reviewer</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="closed" title="Closed"
+        i18n:attributes="title">
+  <description i18n:translate="">
+    The insurance policy has been created.
   </description>
   <exit-transition transition_id="reject"/>
   <permission-map name="Access contents information" acquired="False">
@@ -102,6 +155,20 @@
              i18n:attributes="title">
   <action url="%(content_url)s/content_status_modify?workflow_action=submit"
           category="workflow" icon="" i18n:translate="">Submit</action>
+  <guard>
+   <guard-permission>Request review</guard-permission>
+  </guard>
+ </transition>
+ <transition transition_id="expire" title="Mark the quotation as expired" new_state="expired" trigger="USER" before_script="" after_script=""
+             i18n:attributes="title">
+  <action url="%(content_url)s/content_status_modify?workflow_action=expire" category="workflow" icon="" i18n:translate="">Expire</action>
+  <guard>
+   <guard-permission>Review portal content</guard-permission>
+  </guard>
+ </transition>
+ <transition transition_id="close" title="Mark the quotation as closed" new_state="closed" trigger="USER" before_script="" after_script=""
+             i18n:attributes="title">
+  <action url="%(content_url)s/content_status_modify?workflow_action=close" category="workflow" icon="" i18n:translate="">Close</action>
   <guard>
    <guard-permission>Request review</guard-permission>
   </guard>

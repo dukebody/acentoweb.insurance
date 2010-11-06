@@ -58,3 +58,27 @@ msgstr ""
 
 msgid "Quotations pending"
 msgstr ""
+
+msgid "Mark the quotation as expired"
+msgstr ""
+
+msgid "Expire"
+msgstr ""
+
+msgid "Expired"
+msgstr ""
+
+msgid "The quotation has expired"
+msgstr ""
+
+msgid "Mark the quotation as closed"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Closed"
+msgstr ""
+
+msgid "The insurance policy has been created."
+msgstr ""

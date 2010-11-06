@@ -10,6 +10,13 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="purge_requests"
+      for="*"
+      class=".purgerequests.PurgeOldRequests"
+      permission="cmf.ManagePortal"
+      />
+
   <browser:viewlet
       name="acentoweb.insurance.community_offers_summary"
       for="..content.communityrequest.ICommunityRequest"

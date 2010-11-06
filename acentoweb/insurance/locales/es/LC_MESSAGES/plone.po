@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "POT-Creation-Date: 2010-10-11 17:30+0000\n"
-"PO-Revision-Date: 2010-10-11 20:32+0200\n"
+"PO-Revision-Date: 2010-11-06 17:46+0100\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,8 +14,26 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone\n"
 
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Closed"
+msgstr "Cerrada"
+
 msgid "Draft"
 msgstr "Borrador"
+
+msgid "Expire"
+msgstr "Marcar como caducada"
+
+msgid "Expired"
+msgstr "Caducada"
+
+msgid "Mark the quotation as closed"
+msgstr "Marcar la solicitud como cerrada"
+
+msgid "Mark the quotation as expired"
+msgstr "Marcar la solicitud como caducada"
 
 msgid "Mark the quotation as quoted"
 msgstr "Marcar la solicitud como cotizada"
@@ -47,8 +65,14 @@ msgstr "Enviar para publicación"
 msgid "Submit the quotation for review"
 msgstr "Enviar la solicitud para su revisión"
 
+msgid "The insurance policy has been created."
+msgstr "La póliza de seguro ha sido creada"
+
 msgid "The quotation has ben quoted"
 msgstr "La solicitud ha sido cotizada"
+
+msgid "The quotation has expired"
+msgstr "La solicitud ha caducado"
 
 msgid "The quotation is being drafted."
 msgstr "La solicitud está en proceso de elaboración"

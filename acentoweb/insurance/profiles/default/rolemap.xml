@@ -1,0 +1,33 @@
+<rolemap>
+  <roles>
+    <role name="Agent" />
+    <role name="Broker" />
+  </roles>
+  <permissions>
+    <permission
+        name="acentoweb.insurance: Add insurance request"
+        acquire="True">
+      <role name="Manager" />
+      <role name="Agent" />
+    </permission>
+    <permission
+        name="acentoweb.insurance: Add insurance offer"
+        acquire="True">
+      <role name="Manager" />
+      <role name="Broker" />
+    </permission>
+    <permission
+        name="acentoweb.insurance: Add insurance policy"
+        acquire="True">
+      <role name="Manager" />
+      <role name="Agent" />
+    </permission>
+    <permission
+        name="Review portal content"
+        acquire="True">
+      <role name="Manager" />
+      <role name="Reviewer" />
+      <role name="Broker" />
+    </permission>
+  </permissions>
+</rolemap>

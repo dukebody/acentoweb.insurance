@@ -34,4 +34,20 @@
       />
 
 
+  <!-- custom permissions -->
+  <permission
+      id="acentoweb.insurance.addrequest"
+      title="acentoweb.insurance: Add insurance request"
+      />
+
+  <permission
+      id="acentoweb.insurance.addoffer"
+      title="acentoweb.insurance: Add insurance offer"
+      />
+
+  <permission
+      id="acentoweb.insurance.addpolicy"
+      title="acentoweb.insurance: Add insurance policy"
+      />
+
 </configure>

@@ -1,0 +1,9 @@
+1. Los usuarios necesitan el permiso de "Add portal content" para
+poder empezar a añadir solicitudes, ofertas y pólizas,
+independientemente del permiso de adición del FTI de Dexterity
+correspondiente. Esto se puede hacer desde el @@sharing de la carpeta
+donde se vayan a crear las solicitudes de cotización.
+
+2. Si se desea, crear manualmente grupos Brokers y Agents y asignarles
+los roles correspondientes. TODO para una versión posterior si se
+quiere hacer automático.

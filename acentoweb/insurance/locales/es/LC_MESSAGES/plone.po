@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2010-10-11 17:30+0000\n"
-"PO-Revision-Date: 2010-11-06 17:46+0100\n"
+"POT-Creation-Date: 2010-11-10 17:30+0000\n"
+"PO-Revision-Date: 2010-11-10 17:46+0100\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -80,3 +80,11 @@ msgstr "La solicitud está en proceso de elaboración"
 msgid "The quotation is pending"
 msgstr "La cotización está en proceso de revisión"
 
+msgid "Internal Workflow for insurance stuff"
+msgstr "Workflow interno para cosas de la aseguradora"
+
+msgid "- One state workflow but hidden for anonymous."
+msgstr "- Workflow de estado único, pero oculto para usuarios anónimos."
+
+msgid "Visible by the agent who created the request (via acquisition) and the owner, editable by the owner."
+msgstr "Visible por el broker que creó la solicitud (por adquisición) y por el creador; editable por el creador."

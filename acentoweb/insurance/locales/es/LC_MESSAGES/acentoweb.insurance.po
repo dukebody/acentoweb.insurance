@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2010-11-01 13:06+0000\n"
-"PO-Revision-Date: 2010-11-01 14:12+0100\n"
+"POT-Creation-Date: 2010-11-10 18:34+0000\n"
+"PO-Revision-Date: 2010-11-10 19:34+0100\n"
 "Last-Translator: Israel Saeta Pérez <israel@acentoweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Asistencia 24h"
 msgid "Additional info"
 msgstr "Información adicional"
 
-#: ./content/communitypolicy.py:38
+#: ./content/communitypolicy.py:52
 msgid "Additional notes"
 msgstr "Notas adicionales"
 
@@ -112,9 +112,13 @@ msgstr "NIF del conductor auxiliar"
 msgid "Auxiliar driver name"
 msgstr "Nombre del conductor auxiliar"
 
-#: ./content/communitypolicy.py:25
+#: ./content/communitypolicy.py:37
 msgid "Bank account number"
 msgstr "Número de cuenta corriente bancaria"
+
+#: ./content/communitypolicy.py:33
+msgid "Bank name"
+msgstr "Entidad bancaria"
 
 #: ./content/communityrequest.py:100
 msgid "Building"
@@ -161,7 +165,7 @@ msgid "Community Insurance Request"
 msgstr "Solicitud de cotización de comunidades"
 
 #: ./content/communityoffer.py:13
-#: ./content/communitypolicy.py:17
+#: ./content/communitypolicy.py:25
 msgid "Company"
 msgstr "Empresa"
 
@@ -223,15 +227,15 @@ msgstr "NIF del conductor"
 msgid "Driver name"
 msgstr "Nombre del conductor"
 
-#: ./content/communitypolicy.py:32
+#: ./content/communitypolicy.py:46
 msgid "Each six months"
 msgstr "Semestralmente"
 
-#: ./content/communitypolicy.py:33
+#: ./content/communitypolicy.py:47
 msgid "Each three months"
 msgstr "Trimestralmente"
 
-#: ./content/communitypolicy.py:21
+#: ./content/communitypolicy.py:29
 msgid "Effective date"
 msgstr "Fecha de efecto"
 
@@ -265,6 +269,10 @@ msgstr "Protecciones contra el fuego"
 msgid "Firemen distance"
 msgstr "Distancia al parque de bomberos"
 
+#: ./content/communitypolicy.py:17
+msgid "Full name or corporate name"
+msgstr "Nombre y apellidos o denominación social"
+
 #: ./content/communityrequest.py:481
 msgid "Furniture contained"
 msgstr "Contenido muebles"
@@ -282,6 +290,7 @@ msgstr "Cristales"
 msgid "High houses continent"
 msgstr "Continente de las casas en alto"
 
+#: ./content/communitypolicy.py:16
 #: ./content/communityrequest.py:18
 msgid "Holder"
 msgstr "Tomador"
@@ -413,7 +422,7 @@ msgstr "Empresa de mantenimiento"
 msgid "More than 15 km"
 msgstr "Más de 15 km"
 
-#: ./content/communitypolicy.py:13
+#: ./content/communitypolicy.py:21
 msgid "NIF/CIF"
 msgstr "NIF/CIF"
 
@@ -511,7 +520,7 @@ msgstr "Otros accesos"
 msgid "Others contained"
 msgstr "Otros contenidos"
 
-#: ./content/communitypolicy.py:29
+#: ./content/communitypolicy.py:43
 msgid "Payment method"
 msgstr "Método de pago"
 
@@ -611,7 +620,7 @@ msgstr "Mantenimiento de bocas de riego"
 msgid "Year the building was built"
 msgstr "Año en el que se construyó el edificio"
 
-#: ./content/communitypolicy.py:31
+#: ./content/communitypolicy.py:45
 msgid "Yearly"
 msgstr "Anualmente"
 

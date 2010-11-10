@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-01 13:06+0000\n"
+"POT-Creation-Date: 2010-11-10 18:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Additional info"
 msgstr ""
 
-#: ./content/communitypolicy.py:38
+#: ./content/communitypolicy.py:52
 msgid "Additional notes"
 msgstr ""
 
@@ -115,8 +115,12 @@ msgstr ""
 msgid "Auxiliar driver name"
 msgstr ""
 
-#: ./content/communitypolicy.py:25
+#: ./content/communitypolicy.py:37
 msgid "Bank account number"
+msgstr ""
+
+#: ./content/communitypolicy.py:33
+msgid "Bank name"
 msgstr ""
 
 #: ./content/communityrequest.py:100
@@ -164,7 +168,7 @@ msgid "Community Insurance Request"
 msgstr ""
 
 #: ./content/communityoffer.py:13
-#: ./content/communitypolicy.py:17
+#: ./content/communitypolicy.py:25
 msgid "Company"
 msgstr ""
 
@@ -226,15 +230,15 @@ msgstr ""
 msgid "Driver name"
 msgstr ""
 
-#: ./content/communitypolicy.py:32
+#: ./content/communitypolicy.py:46
 msgid "Each six months"
 msgstr ""
 
-#: ./content/communitypolicy.py:33
+#: ./content/communitypolicy.py:47
 msgid "Each three months"
 msgstr ""
 
-#: ./content/communitypolicy.py:21
+#: ./content/communitypolicy.py:29
 msgid "Effective date"
 msgstr ""
 
@@ -268,6 +272,10 @@ msgstr ""
 msgid "Firemen distance"
 msgstr ""
 
+#: ./content/communitypolicy.py:17
+msgid "Full name or corporate name"
+msgstr ""
+
 #: ./content/communityrequest.py:481
 msgid "Furniture contained"
 msgstr ""
@@ -285,6 +293,7 @@ msgstr ""
 msgid "High houses continent"
 msgstr ""
 
+#: ./content/communitypolicy.py:16
 #: ./content/communityrequest.py:18
 msgid "Holder"
 msgstr ""
@@ -416,7 +425,7 @@ msgstr ""
 msgid "More than 15 km"
 msgstr ""
 
-#: ./content/communitypolicy.py:13
+#: ./content/communitypolicy.py:21
 msgid "NIF/CIF"
 msgstr ""
 
@@ -514,7 +523,7 @@ msgstr ""
 msgid "Others contained"
 msgstr ""
 
-#: ./content/communitypolicy.py:29
+#: ./content/communitypolicy.py:43
 msgid "Payment method"
 msgstr ""
 
@@ -614,7 +623,7 @@ msgstr ""
 msgid "Year the building was built"
 msgstr ""
 
-#: ./content/communitypolicy.py:31
+#: ./content/communitypolicy.py:45
 msgid "Yearly"
 msgstr ""
 

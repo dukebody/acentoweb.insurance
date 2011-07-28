@@ -190,6 +190,7 @@ class ICommunityRequest(form.Schema):
                           'electricRepairmentsYear',
                           'electricRepairmentsType',
                           'drainPipesRepairmentsYear',
+                          'waterConductionRepairmentsYear',
                           'businesses',
                           'nBusinesses',
                           'm2Businesses',

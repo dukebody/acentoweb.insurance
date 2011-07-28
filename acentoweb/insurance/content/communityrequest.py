@@ -5,6 +5,8 @@ from plone.directives import form
 
 from plone.app.textfield import RichText
 
+from Products.CMFCore.utils  import getToolByName
+
 from acentoweb.insurance import _
 from acentoweb.insurance.vocabulary import YesNoVocabulary
 
@@ -158,6 +160,7 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
+    form.mode(agentName='display', agentCode='display')
 
 
     # building data
@@ -393,3 +396,28 @@ class ICommunityRequest(form.Schema):
             title=_(u"Notes"),
             required=False
         )
+
+
+@form.default_value(field=ICommunityRequest['agentName'])
+def getAgentName(data):
+    context = data.context
+    mt = getToolByName(context, 'portal_membership')
+
+    if mt.isAnonymousUser(): # the user has not logged in
+        return None
+    else:
+        member = mt.getAuthenticatedMember()
+        fullname = member.getProperty('fullname')
+        return fullname
+
+@form.default_value(field=ICommunityRequest['agentCode'])
+def getAgentCode(data):
+    context = data.context
+    mt = getToolByName(context, 'portal_membership')
+
+    if mt.isAnonymousUser(): # the user has not logged in
+        return None
+    else:
+        member = mt.getAuthenticatedMember()
+        username = member.getUserName()
+        return username

@@ -18,118 +18,184 @@ class ICommunityRequest(form.Schema):
                   label=_(u"Holder"),
                   fields=['title', # holderName
                           'holderId',
-                          'holderTown',
-                          'holderProvince',
-                          'holderPhone']
+                          'holderAddress',
+                          'holderTownPostCode',
+                          'holderPhone',
+                          'holderEMail']
                   )
 
     title = schema.TextLine(
-        title=_(u"Holder name"),
+        title=_(u"Name"),
         )
 
     holderId = schema.TextLine(
-        title=_(u"Holder NIF/CIF"),
+        title=_(u"NIF/CIF"),
         required=False,
         )
 
-    holderTown = schema.TextLine(
-        title=_(u"Holder town"),
+    holderAddress = schema.TextLine(
+        title=_(u"Address"),
         required=False,
         )
 
-    holderProvince = schema.TextLine(
-        title=_(u"Holder province"),
+    holderTownPostCode = schema.TextLine(
+        title=_(u"Town - Postal Code"),
         required=False,
         )
 
     holderPhone = schema.TextLine(
-        title=_(u"Holder phone number"),
+        title=_(u"Phone number"),
         required=False,
         )
 
-    # insured data (blank if same as holder)
-    form.fieldset('insuredData',
-                  label=_(u"Insured"),
-                  fields=['insuredName',
-                          'insuredId',
-                          'insuredTown',
-                          'insuredProvince',
-                          'insuredPhone',
-                          'insuredContactPerson',
-                          'insuredContactPersonPhone',]
+    holderEMail = schema.TextLine(
+        title=_(u"E-mail"),
+        required=False,
+        )
+
+
+    # insurance data
+    form.fieldset('insuranceData',
+                  label=_(u"Insurance"),
+                  fields=['insuranceSituation',
+                          'insuranceTownPostCode',
+                          'insuranceBuildingAdmin',
+                          'insuranceContactPerson',
+                          'insuranceContactPhone']
                   )
 
-    insuredName = schema.TextLine(
-        title=_(u"Insured name"),
+    insuranceSituation = schema.TextLine(
+        title=_(u"Situation"),
         required=False,
         )
 
-    insuredId = schema.TextLine(
-        title=_(u"Insured NIF/CIF"),
+    insuranceTownPostCode = schema.TextLine(
+        title=_(u"Town - Postal Code"),
         required=False,
         )
 
-    insuredTown = schema.TextLine(
-        title=_(u"Insured town"),
+    insuranceBuildingAdmin = schema.TextLine(
+        title=_(u"Building Administrator"),
         required=False,
         )
 
-    insuredProvince = schema.TextLine(
-        title=_(u"Insured province"),
+    insuranceContactPerson = schema.TextLine(
+        title=_(u"Contact person"),
         required=False,
         )
 
-    insuredPhone = schema.TextLine(
-        title=_(u"Insured phone number"),
+    insuranceContactPhone = schema.TextLine(
+        title=_(u"Contact phone"),
         required=False,
         )
 
-    insuredContactPerson = schema.TextLine(
-        title=_(u"Insured contact person"),
+
+    # insurance values
+    form.fieldset('valuesData',
+                  label=_(u"Values"),
+                  fields=['continentTotal',
+                          'containedTotal',
+                          'continentGarages',
+                          'continentCellars',
+                          'oldInsurance',
+                          'oldInsuranceCompany',
+                          'oldInsuranceExpiry'
+                          ]
+                  )
+
+    continentTotal = schema.TextLine(
+        title=_(u'Total continent'),
         required=False,
         )
 
-    insuredContactPersonPhone = schema.TextLine(
-        title=_(u"Insured contact person phone number"),
+
+    containedTotal = schema.TextLine(
+        title=_(u'Total contained'),
         required=False,
         )
+
+    continentGarages = schema.TextLine(
+        title=_(u'Garages continent'),
+        required=False,
+        )
+
+    continentCellars = schema.TextLine(
+        title=_(u'Cellars continent'),
+        required=False,
+        )
+
+    oldInsurance = schema.Choice(
+        title=_(u'Does it have an insurance policy now?'),
+        vocabulary=YesNoVocabulary,
+        required=False,
+        )
+
+    oldInsuranceCompany = schema.TextLine(
+        title=_(u'Current insurance company'),
+        required=False,
+        )
+
+    oldInsuranceExpiry = schema.TextLine(
+        title=_(u'Expiry date'),
+        required=False,
+        )
+
+
+    # agent data
+    form.fieldset('agentData',
+                  label=_(u"Agent"),
+                  fields=['agentName',
+                          'agentCode',]
+                  )
+
+    agentName = schema.TextLine(
+        title=_(u'Agent name'),
+        required=False,
+        )
+
+    agentCode = schema.TextLine(
+        title=_(u'Agent code'),
+        required=False,
+        )
+
+
 
     # building data
-
     form.fieldset('buildingData',
                   label=_(u"Building"),
                   fields=['buildingYear',
+                          'closedNeighborhood',
+                          'm2',
+                          'm2Gardens',
+                          'nBuildings',
                           'nMainDoors',
                           'otherAccesses',
-                          'nSquareMeters',
                           'nFloors',
                           'nHousesFloor',
                           'nHouses',
-                          'housesInBottomFloor',
-                          'nSquareMetersHouse',
                           'nUndergroundFloors',
                           'nCellars',
-                          'swimmingPool',
+                          'cellarsInCommunity',
+                          'nSwimmingPools',
                           'garages',
                           'garagesInCommunity',
                           'garageValue',
-                          'garageInCommunityHousesInsurance',
                           'nParkingLots',
                           'nAdditionalHouses',
-                          'nSquareMetersAddHouse',
+                          'm2AddHouse',
+                          'm2AddHouseTotal',
                           'nOffices',
-                          'nSquareMetersOffices',
-                          'gardens',
+                          'm2Offices',
                           'housesDestination',
                           'electricRepairmentsYear',
+                          'electricRepairmentsType',
                           'drainPipesRepairmentsYear',
                           'businesses',
                           'nBusinesses',
+                          'm2Businesses',
                           'businessesInCommunity',
-                          'existingInsurance',
-                          'existingInsuranceExpiration',
-                          'existingInsuranceCompany',
                           'businessesDescription',
+                          'nExtinguishers'
                           ]
                   )
 
@@ -138,23 +204,34 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
+    closedNeighborhood = schema.Choice(
+        title=_(u'Is it a closed neighborhood?'),
+        vocabulary=YesNoVocabulary,
+        required=False,
+        )
+
+    m2 = schema.Int(
+        title=_(u'Number of square meters built'),
+        required=False,
+        )
+
+    m2Gardens = schema.Int(
+        title=_(u'Number of garden square meters'),
+        required=False,
+        )
+
+    nBuildings = schema.Int(
+        title=_(u'Number of buildings'),
+        required=False,
+        )
+
     nMainDoors = schema.Int(
         title=_(u'Number of main doors'),
         required=False,
         )
 
-    otherAccesses = schema.TextLine(
-        title=_(u'Other accesses'),
-        required=False,
-        )
-
-    nSquareMeters = schema.Int(
-        title=_(u'Number of square meters built'),
-        required=False,
-        )
-
     nFloors = schema.Int(
-        title=_(u'Number of floors high'),
+        title=_(u'Number of floors'),
         required=False,
         )
 
@@ -168,17 +245,6 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    housesInBottomFloor = schema.Choice(
-        title=_(u'Are there any houses in the bottom floor?'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    nSquareMetersHouse = schema.Int(
-        title=_(u'Number of square meters per house'),
-        required=False,
-        )
-
     nUndergroundFloors = schema.Int(
         title=_(u'Number of underground floors'),
         required=False,
@@ -189,9 +255,14 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    swimmingPool = schema.Choice(
-        title=_(u'Are there swimming pools?'),
+    cellarsInCommunity = schema.Choice(
+        title=_(u'Are the cellars included in the community?'),
         vocabulary=YesNoVocabulary,
+        required=False,
+        )
+
+    nSwimmingPools = schema.Int(
+        title=_(u'Number of swimming pools'),
         required=False,
         )
 
@@ -213,12 +284,6 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    garageInCommunityHousesInsurance = schema.Choice(
-        title=_(u'Are the garages included in the community houses insurance?'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
     nParkingLots = schema.Int(
         title=_(u'Number of parking lots in the garages'),
         required=False,
@@ -229,9 +294,14 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    nSquareMetersAddHouse = schema.Int(
+    m2AddHouse = schema.Int(
         title=_(u'Number of square meters per unifamiliar or semi-detached house'),
         description=_(u"These should be included in the 'Built square meters' field."),
+        required=False,
+        )
+
+    m2AddHouseTotal = schema.Int(
+        title=_(u'Total square meters dedicated to unifamiliar or semi-detached houses'),
         required=False,
         )
 
@@ -240,15 +310,9 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-    nSquareMetersOffices = schema.Int(
-        title=_(u'Number of total square meters dedicated to offices'),
+    m2Offices = schema.Int(
+        title=_(u'Number of square meters dedicated to offices'),
         description=_(u"This cannot be included in the 'Built square meters' field."),
-        required=False,
-        )
-
-    gardens = schema.Choice(
-        title=_(u'Does the community have shared gardens?'),
-        vocabulary=YesNoVocabulary,
         required=False,
         )
 
@@ -267,8 +331,19 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
+    electricRepairmentsType = schema.TextLine(
+        title=_(u'Repairment type'),
+        required=False,
+        )
+
     drainPipesRepairmentsYear = schema.Int(
-        title=_(u'Drain Pipes repairments year'),
+        title=_(u'Drain pipes repairments year'),
+        description=_(u'Leave blank if not performed'),
+        required=False,
+        )
+
+    waterConductionRepairmentsYear = schema.Int(
+        title=_(u'Water conduction repairments year'),
         description=_(u'Leave blank if not performed'),
         required=False,
         )
@@ -290,219 +365,22 @@ class ICommunityRequest(form.Schema):
         required=False,
         )
 
-
-    existingInsurance = schema.Choice(
-        title=_(u'Does the community currently have an insurance?'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    existingInsuranceExpiration = schema.Date(
-        title=_(u'Existing insurance expiry date'),
-        required=False,
-        )
-
-    existingInsuranceCompany = schema.TextLine(
-        title=_(u'Current company'),
+    m2Businesses = schema.Int(
+        title=_(u'Square meters dedicated to business'),
         required=False,
         )
 
     businessesDescription = RichText(
         title=_(u'Businesses description'),
-        description=_(u'If the businesses are included in the community, enter the number of businesses, square meters and activity description of each one.'),
+        description=_(u'If the businesses are included in the community insurance, enter the number of businesses, square meters and activity description of each one.'),
         required=False,
         )
-
-    # fire protections
-    form.fieldset('fireProtections',
-                  label=_(u"Fire protections"),
-                  fields=['nExtinguishers',
-                          'extinguishersMaintenance',
-                          'extinguishersCompany',
-
-                          'nDetectors',
-                          'detectorsMaintenance',
-                          'detectorsCompany',
-
-                          'nWaterPumps',
-                          'waterPumpsMaintenance',
-                          'waterPumpsCompany',
-
-                          'nAlarms',
-                          'alarmsMaintenance',
-                          'alarmsCompany',
-
-                          'nWaterDispensers',
-                          'waterDispensersMaintenance',
-                          'waterDispensersCompany',
-
-                          'firemenDistance',
-                          ]
-                  )
-
 
     nExtinguishers = schema.Int(
         title=_(u'Number of fire extinguishers'),
         required=False,
         )
 
-    extinguishersMaintenance = schema.Choice(
-        title=_(u'Extinguishers maintenance'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    extinguishersCompany = schema.TextLine(
-        title=_(u'Maintenance company'),
-        required=False,
-        )
-
-    nDetectors = schema.Int(
-        title=_(u'Number of fire detectors'),
-        required=False,
-        )
-
-    detectorsMaintenance = schema.Choice(
-        title=_(u'Detectors maintenance'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    detectorsCompany = schema.TextLine(
-        title=_(u'Maintenance company'),
-        required=False,
-        )
-
-    nWaterPumps = schema.Int(
-        title=_(u'Number of fire water pumps'),
-        required=False,
-        )
-
-    waterPumpsMaintenance = schema.Choice(
-        title=_(u'Water pumps maintenance'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    waterPumpsCompany = schema.TextLine(
-        title=_(u'Maintenance company'),
-        required=False,
-        )
-
-    nAlarms = schema.Int(
-        title=_(u'Number of fire alarms'),
-        required=False,
-        )
-
-    alarmsMaintenance = schema.Choice(
-        title=_(u'Alarms maintenance'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    alarmsCompany = schema.TextLine(
-        title=_(u'Maintenance company'),
-        required=False,
-        )
-
-    nWaterDispensers = schema.Int(
-        title=_(u'Number of water dispensers'),
-        required=False,
-        )
-
-    waterDispensersMaintenance = schema.Choice(
-        title=_(u'Water dispensers maintenance'),
-        vocabulary=YesNoVocabulary,
-        required=False,
-        )
-
-    waterDispensersCompany = schema.TextLine(
-        title=_(u'Maintenance company'),
-        required=False,
-        )
-
-    firemenDistance = schema.Choice(
-        title=_(u'Firemen distance'),
-        vocabulary=SimpleVocabulary(
-            [SimpleTerm(value='more15km', title=_(u'More than 15 km')),
-             SimpleTerm(value='less15km', title=_(u'Less than 15 km'))],
-            ),
-        required=False,
-        )
-
-    # XXX: ommiting robbery!!!
-
-    # insurance values
-    form.fieldset('valuesData',
-                  label=_(u"Values"),
-                  fields=['continentTotal',
-                          'continentHighHouses',
-                          'continentAddedHouses',
-                          'continentGarages',
-                          'continentCellars',
-
-                          'containedTotal',
-                          'containedFurniture',
-                          'containedOthers',
-                          ]
-                  )
-
-    continentTotal = schema.TextLine(
-        title=_(u'Total continent'),
-        required=False,
-        )
-
-    continentHighHouses = schema.TextLine(
-        title=_(u'High houses continent'),
-        required=False,
-        )
-
-    continentAddedHouses = schema.TextLine(
-        title=_(u'Unifamiliar or semi-detached houses continent'),
-        required=False,
-        )
-
-    continentGarages = schema.TextLine(
-        title=_(u'Garages continent'),
-        required=False,
-        )
-
-    continentCellars = schema.TextLine(
-        title=_(u'Cellars continent'),
-        required=False,
-        )
-
-    containedTotal = schema.TextLine(
-        title=_(u'Total contained'),
-        required=False,
-        )
-
-    containedFurniture = schema.TextLine(
-        title=_(u'Furniture contained'),
-        required=False,
-        )
-
-    containedOthers = schema.TextLine(
-        title=_(u'Others contained'),
-        required=False,
-        )
-
-    # agent data
-    form.fieldset('agentData',
-                  label=_(u"Agent"),
-                  fields=['agentName',
-                          'agentCode',]
-                  )
-
-    agentName = schema.TextLine(
-        title=_(u'Agent name'),
-        required=False,
-        )
-
-    agentCode = schema.TextLine(
-        title=_(u'Agent code'),
-        required=False,
-        )
 
     # notes
     form.fieldset('additionalInfo',
